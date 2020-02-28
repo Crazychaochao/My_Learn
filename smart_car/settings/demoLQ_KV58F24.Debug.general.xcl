@@ -1,0 +1,13 @@
+"D:\xinchao\software\IAR7.8\arm\bin\armproc.dll" 
+
+"D:\xinchao\software\IAR7.8\arm\bin\armjlink2.dll" 
+
+"E:\ÐÂ³±\±¦\7.4 - ¸±±¾\debug\demoLQ_KV58F24.out" 
+
+--plugin "D:\xinchao\software\IAR7.8\arm\bin\armbat.dll" 
+
+--device_macro "D:\xinchao\software\IAR7.8\arm\config\debugger\NXP\KV5x.dmac" 
+
+
+
+

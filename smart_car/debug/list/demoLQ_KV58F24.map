@@ -1,0 +1,1118 @@
+###############################################################################
+#
+# IAR ELF Linker V7.80.4.12462/W32 for ARM                07/Jul/2019  07:21:57
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  E:\新潮\宝\7.4 - 副本\debug\demoLQ_KV58F24.out
+#    Map file     =  E:\新潮\宝\7.4 - 副本\debug\list\demoLQ_KV58F24.map
+#    Command line =  
+#        "E:\新潮\宝\7.4 - 副本\debug\obj\APPmain.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\avoid.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\DianCi_BianCha.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\Direction.o" "E:\新潮\宝\7.4 - 副本\debug\obj\EandV.o"
+#        "E:\新潮\宝\7.4 - 副本\debug\obj\fsl_clock_manager.o" "E:\新潮\宝\7.4
+#        - 副本\debug\obj\fsl_clock_manager_common.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_clock_MKV58F24.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_debug_console.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_dmamux_hal.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_hsadc_common.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_hsadc_driver.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_hsadc_hal.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_hwtimer.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_hwtimer_pit.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_hwtimer_systick.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_hwtimer_systick_irq.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_interrupt_manager.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_interrupt_manager_common.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_interrupt_manager_irq.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_llwu_hal.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_mcg_hal.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_mcg_hal_modes.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_misc_utilities.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_mscm_hal.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_osc_hal.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_port_hal.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_power_manager.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_rcm_hal.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_sim_hal_MKV58F24.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\fsl_smc_hal.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\Handle.o" "E:\新潮\宝\7.4 - 副本\debug\obj\LPTMR.o"
+#        "E:\新潮\宝\7.4 - 副本\debug\obj\LQ12864SPI.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\LQ9AX.o" "E:\新潮\宝\7.4 - 副本\debug\obj\LQ_KEY.o"
+#        "E:\新潮\宝\7.4 - 副本\debug\obj\LQ_LED.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\LQ_PLL.o" "E:\新潮\宝\7.4 - 副本\debug\obj\LQ_SGP18T.o"
+#        "E:\新潮\宝\7.4 - 副本\debug\obj\LQADC.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\LQDMA.o" "E:\新潮\宝\7.4 - 副本\debug\obj\LQFTM.o"
+#        "E:\新潮\宝\7.4 - 副本\debug\obj\LQGPIO.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\LQI2C.o" "E:\新潮\宝\7.4 - 副本\debug\obj\LQIIC6050.o"
+#        "E:\新潮\宝\7.4 - 副本\debug\obj\LQMT9V034.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\LQPIT.o" "E:\新潮\宝\7.4 - 副本\debug\obj\LQUART.o"
+#        "E:\新潮\宝\7.4 - 副本\debug\obj\LQWDOG.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\Mists_Pid.o" "E:\新潮\宝\7.4 - 副本\debug\obj\PID.o"
+#        "E:\新潮\宝\7.4 - 副本\debug\obj\pin_mux.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\print_scan.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\startup.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\startup_MKV58F24.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\System.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\system_MKV58F24.o" "E:\新潮\宝\7.4 -
+#        副本\debug\obj\tuxiang.o" "E:\新潮\宝\7.4 - 副本\debug\obj\u_iic.o"
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        "E:\新潮\宝\7.4 - 副本\debug\demoLQ_KV58F24.out" --map "E:\新潮\宝\7.4
+#        - 副本\debug\list\demoLQ_KV58F24.map" --config "E:\新潮\宝\7.4 -
+#        副本\LQuser\devices\linker\MKV58F1M0xxx24_flash.icf" --semihosting
+#        --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x10000000 { ro section .intvec };
+"P1":  place in [from 0x10000400 to 0x1000040f] { section FlashConfig };
+"P2":  place in [from 0x10000000 to 0x100003ff] |
+                [from 0x10000410 to 0x100fffff] { ro };
+"P3":  place in [from 0x20000000 to 0x2001fbff] { block RW };
+"P4":  place in [from 0x20000000 to 0x2001fbff] { block ZI };
+"P6":  place in [from 0x2001fc00 to 0x2001ffff] { block CSTACK };
+initialize by copy { rw, section .textrw };
+
+  Section               Kind        Address    Size  Object
+  -------               ----        -------    ----  ------
+"A0":                                         0x400
+  .intvec               ro code  0x10000000   0x400  startup_MKV58F24.o [1]
+                               - 0x10000400   0x400
+
+"P1":                                          0x10
+  FlashConfig           ro code  0x10000400    0x10  startup_MKV58F24.o [1]
+                               - 0x10000410    0x10
+
+"P2":                                        0xa361
+  .text                 ro code  0x10000410  0x19b4  DianCi_BianCha.o [1]
+  .text                 ro code  0x10001dc4    0xbc  LQADC.o [1]
+  .text                 ro code  0x10001e80    0x30  I32ToDbl.o [4]
+  .text                 ro code  0x10001eb0   0x1a2  DblMul.o [4]
+  .text                 ro code  0x10002052     0x2  startup_MKV58F24.o [1]
+  .text                 ro code  0x10002054    0x4c  DblToI32.o [4]
+  .text                 ro code  0x100020a0   0x1d8  LQ_LED.o [1]
+  .text                 ro code  0x10002278  0x1120  tuxiang.o [1]
+  .text                 ro code  0x10003398   0x13c  LQGPIO.o [1]
+  .text                 ro code  0x100034d4    0x4e  FltToDbl.o [4]
+  .text                 ro code  0x10003522     0x2  startup_MKV58F24.o [1]
+  .text                 ro code  0x10003524    0xe8  DblAdd.o [4]
+  Veneer                ro code  0x1000360c     0x8  - Linker created -
+  Veneer                ro code  0x10003614     0x8  - Linker created -
+  Veneer                ro code  0x1000361c     0x8  - Linker created -
+  .text                 ro code  0x10003624   0xe94  LQMT9V034.o [1]
+  .text                 ro code  0x100044b8   0x180  DblSub.o [4]
+  .text                 ro code  0x10004638   0x434  Handle.o [1]
+  .text                 ro code  0x10004a6c  0x1434  EandV.o [1]
+  .text                 ro code  0x10005ea0   0x380  LQ12864SPI.o [1]
+  .text                 ro code  0x10006220   0x256  DblDiv.o [4]
+  .text                 ro code  0x10006476     0x2  startup_MKV58F24.o [1]
+  .text                 ro code  0x10006478    0x2e  DblCmpLe.o [4]
+  .text                 ro code  0x100064a6     0x2  startup_MKV58F24.o [1]
+  .text                 ro code  0x100064a8   0x8f4  LQIIC6050.o [1]
+  .text                 ro code  0x10006d9c    0xf4  atan2.o [4]
+  .text                 ro code  0x10006e90    0x90  DblToFlt.o [4]
+  .text                 ro code  0x10006f20   0x376  LQFTM.o [1]
+  .text                 ro code  0x10007296     0x2  startup_MKV58F24.o [1]
+  .text                 ro code  0x10007298    0x2e  DblCmpGe.o [4]
+  .text                 ro code  0x100072c6     0x2  startup_MKV58F24.o [1]
+  .text                 ro code  0x100072c8    0xc4  LPTMR.o [1]
+  .text                 ro code  0x1000738c   0x3da  u_iic.o [1]
+  .text                 ro code  0x10007766     0x2  startup_MKV58F24.o [1]
+  .text                 ro code  0x10007768    0x24  printf.o [3]
+  .text                 ro code  0x1000778c   0x132  I64DivMod.o [5]
+  .text                 ro code  0x100078be     0x2  startup_MKV58F24.o [1]
+  .text                 ro code  0x100078c0    0x62  I64ToFlt.o [4]
+  .text                 ro code  0x10007924   0x100  sqrt.o [4]
+  .text                 ro code  0x10007a24     0x6  ABImemclr4.o [5]
+  .text                 ro code  0x10007a2a    0x40  xdtest.o [4]
+  .rodata               const    0x10007a6c    0x54  fsl_clock_MKV58F24.o [1]
+  .text                 ro code  0x10007ac0   0x1f0  xatan.o [4]
+  .text                 ro code  0x10007cb0   0x4d8  xprintfsmall.o [3]
+  .text                 ro code  0x10008188     0x2  I64DivZer.o [5]
+  .text                 ro code  0x1000818c     0xc  iarEdom.o [5]
+  .text                 ro code  0x10008198    0x32  ABImemset48.o [5]
+  .text                 ro code  0x100081cc    0x16  strchr.o [5]
+  .text                 ro code  0x100081e4    0x36  strlen.o [5]
+  .text                 ro code  0x1000821c    0x58  memchr.o [5]
+  .text                 ro code  0x10008274     0xc  errno.o [3]
+  .text                 ro code  0x10008280     0x2  xtls.o [3]
+  .text                 ro code  0x10008284   0x510  LQUART.o [1]
+  .text                 ro code  0x10008794   0x50c  fsl_mcg_hal_modes.o [1]
+  .text                 ro code  0x10008ca0   0x394  fsl_mcg_hal.o [1]
+  .text                 ro code  0x10009034   0x31c  fsl_clock_manager.o [1]
+  .text                 ro code  0x10009350    0x24  ABIassert.o [6]
+  .text                 ro code  0x10009374     0xc  fsl_osc_hal.o [1]
+  .text                 ro code  0x10009380     0x6  abort.o [3]
+  .text                 ro code  0x10009388    0x14  exit.o [6]
+  .rodata               const    0x1000939c   0x228  LQ12864SPI.o [1]
+  .text                 ro code  0x100095c4   0x1d6  lz77_init.o [5]
+  .text                 ro code  0x1000979c   0x1c4  System.o [1]
+  .text                 ro code  0x10009960   0x198  LQ_PLL.o [1]
+  .text                 ro code  0x10009af8    0xcc  LQ_KEY.o [1]
+  .text                 ro code  0x10009bc4   0x17c  LQPIT.o [1]
+  .text                 ro code  0x10009d40   0x190  fsl_smc_hal.o [1]
+  .text                 ro code  0x10009ed0    0xcc  fsl_clock_MKV58F24.o [1]
+  .text                 ro code  0x10009f9c    0x3a  fsl_sim_hal_MKV58F24.o [1]
+  .text                 ro code  0x10009fd8    0xd0  system_MKV58F24.o [1]
+  .rodata               const    0x1000a0a8    0x50  fsl_clock_manager.o [1]
+  .text                 ro code  0x1000a0f8    0x44  fsl_debug_console.o [1]
+  .text                 ro code  0x1000a13c    0x44  fsl_hwtimer_systick.o [1]
+  .text                 ro code  0x1000a180    0x44  startup.o [1]
+  .rodata               const    0x1000a1c4    0x40  fsl_clock_manager.o [1]
+  .text                 ro code  0x1000a204    0x40  zero_init3.o [5]
+  .text                 ro code  0x1000a244    0x28  putchar.o [3]
+  .text                 ro code  0x1000a26c    0x28  data_init.o [5]
+  .text                 ro code  0x1000a294    0x22  fpinit_M.o [4]
+  .iar.init_table       const    0x1000a2b8    0x2c  - Linker created -
+  .rodata               const    0x1000a2e4    0x20  fsl_clock_manager.o [1]
+  .text                 ro code  0x1000a304    0x1c  startup_MKV58F24.o [1]
+  .text                 ro code  0x1000a320    0x1a  cmain.o [5]
+  .text                 ro code  0x1000a33a     0x4  low_level_init.o [3]
+  .text                 ro code  0x1000a33e     0xc  APPmain.o [1]
+  .text                 ro code  0x1000a34a     0x4  exit.o [3]
+  .text                 ro code  0x1000a350     0xa  cexit.o [5]
+  .rodata               const    0x1000a35c    0x18  LQ_PLL.o [1]
+  .rodata               const    0x1000a374    0x18  LQ_PLL.o [1]
+  .rodata               const    0x1000a38c    0x18  LQ_PLL.o [1]
+  .rodata               const    0x1000a3a4    0x18  LQ_PLL.o [1]
+  .rodata               const    0x1000a3bc    0x18  LQ_PLL.o [1]
+  .rodata               const    0x1000a3d4    0x18  LQ_PLL.o [1]
+  .text                 ro code  0x1000a3ec    0x16  xprout.o [3]
+  .rodata               const    0x1000a404    0x14  fsl_clock_manager.o [1]
+  .rodata               const    0x1000a418    0x14  LQIIC6050.o [1]
+  .rodata               const    0x1000a42c    0x10  fsl_clock_MKV58F24.o [1]
+  .rodata               const    0x1000a43c    0x10  fsl_mcg_hal.o [1]
+  .rodata               const    0x1000a44c    0x10  LQ_PLL.o [1]
+  .rodata               const    0x1000a45c    0x10  LQIIC6050.o [1]
+  .rodata               const    0x1000a46c    0x10  LQIIC6050.o [1]
+  .text                 ro code  0x1000a47c    0x10  fsl_hwtimer_systick_irq.o [1]
+  .rodata               const    0x1000a48c     0xc  LQIIC6050.o [1]
+  .text                 ro code  0x1000a498     0xc  cstartup_M.o [5]
+  .rodata               const    0x1000a4a4     0x8  LQ_PLL.o [1]
+  .rodata               const    0x1000a4ac     0x8  LQMT9V034.o [1]
+  .rodata               const    0x1000a4b4     0x8  LQMT9V034.o [1]
+  .rodata               const    0x1000a4bc     0x4  fsl_clock_manager_common.o [1]
+  .text                 ro code  0x1000a4c0     0x4  startup_MKV58F24.o [1]
+  .rodata               const    0x1000a4c4     0x0  zero_init3.o [5]
+  .rodata               const    0x1000a4c4     0x0  lz77_init.o [5]
+  Initializer bytes     const    0x1000a4c4   0x2ad  <for RW-1>
+                               - 0x1000a771  0xa361
+
+"P3-P4", part 1 of 2:                         0x46a
+  RW                             0x20000000   0x46a  <Block>
+    RW-1                         0x20000000   0x46a  <Init block>
+      .data             inited   0x20000000     0x4  avoid.o [1]
+      .data             inited   0x20000004     0x4  avoid.o [1]
+      .data             inited   0x20000008     0xc  DianCi_BianCha.o [1]
+      .data             inited   0x20000014     0x4  DianCi_BianCha.o [1]
+      .data             inited   0x20000018    0x10  EandV.o [1]
+      .data             inited   0x20000028    0x10  EandV.o [1]
+      .data             inited   0x20000038    0x10  EandV.o [1]
+      .data             inited   0x20000048    0x10  EandV.o [1]
+      .data             inited   0x20000058    0x10  EandV.o [1]
+      .data             inited   0x20000068    0x10  EandV.o [1]
+      .data             inited   0x20000078    0x10  EandV.o [1]
+      .data             inited   0x20000088    0x90  EandV.o [1]
+      .data             inited   0x20000118    0xa0  EandV.o [1]
+      .data             inited   0x200001b8     0x4  fsl_mcg_hal.o [1]
+      .data             inited   0x200001bc     0x4  fsl_mcg_hal.o [1]
+      .data             inited   0x200001c0    0x14  LQGPIO.o [1]
+      .data             inited   0x200001d4    0x14  LQGPIO.o [1]
+      .data             inited   0x200001e8     0x4  LQIIC6050.o [1]
+      .data             inited   0x200001ec    0x18  LQUART.o [1]
+      .data             inited   0x20000204     0xc  LQUART.o [1]
+      .data             inited   0x20000210     0xc  LQUART.o [1]
+      .data             inited   0x2000021c     0x4  system_MKV58F24.o [1]
+      .data             inited   0x20000220     0x4  tuxiang.o [1]
+      .data             inited   0x20000224     0x4  tuxiang.o [1]
+      .textrw           inited   0x20000228   0x23c  LQMT9V034.o [1]
+      __DLIB_PERTHREAD  inited   0x20000464     0x4  errno.o [3]
+      .data             inited   0x20000468     0x1  tuxiang.o [1]
+      .data             inited   0x20000469     0x1  tuxiang.o [1]
+                               - 0x2000046a   0x46a
+
+"P3-P4", part 2 of 2:                        0xb84c
+  ZI                             0x2000046c  0xb84c  <Block>
+    .bss                zero     0x2000046c     0xc  DianCi_BianCha.o [1]
+    .bss                zero     0x20000478     0xc  DianCi_BianCha.o [1]
+    .bss                zero     0x20000484    0x34  DianCi_BianCha.o [1]
+    .bss                zero     0x200004b8     0xc  DianCi_BianCha.o [1]
+    .bss                zero     0x200004c4    0x34  DianCi_BianCha.o [1]
+    .bss                zero     0x200004f8     0xc  DianCi_BianCha.o [1]
+    .bss                zero     0x20000504    0x14  DianCi_BianCha.o [1]
+    .bss                zero     0x20000518     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x2000051c     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000520     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000524     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000528     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x2000052c     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000530     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000534     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000538     0xc  DianCi_BianCha.o [1]
+    .bss                zero     0x20000544     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000548     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x2000054c     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000550     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000554     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000558     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x2000055c     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000560     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000564     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000568     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x2000056c     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000570     0x4  DianCi_BianCha.o [1]
+    .bss                zero     0x20000574    0x10  EandV.o [1]
+    .bss                zero     0x20000584    0x10  EandV.o [1]
+    .bss                zero     0x20000594    0x10  EandV.o [1]
+    .bss                zero     0x200005a4    0x10  EandV.o [1]
+    .bss                zero     0x200005b4    0x10  EandV.o [1]
+    .bss                zero     0x200005c4    0x10  EandV.o [1]
+    .bss                zero     0x200005d4     0x4  EandV.o [1]
+    .bss                zero     0x200005d8     0x4  EandV.o [1]
+    .bss                zero     0x200005dc     0xc  EandV.o [1]
+    .bss                zero     0x200005e8     0xc  EandV.o [1]
+    .bss                zero     0x200005f4     0xc  EandV.o [1]
+    .bss                zero     0x20000600     0xc  EandV.o [1]
+    .bss                zero     0x2000060c     0x8  EandV.o [1]
+    .bss                zero     0x20000614     0x8  EandV.o [1]
+    .bss                zero     0x2000061c     0x8  EandV.o [1]
+    .bss                zero     0x20000624     0x8  EandV.o [1]
+    .bss                zero     0x2000062c     0xc  EandV.o [1]
+    .bss                zero     0x20000638     0x4  EandV.o [1]
+    .bss                zero     0x2000063c     0x4  EandV.o [1]
+    .bss                zero     0x20000640     0x4  EandV.o [1]
+    .bss                zero     0x20000644     0x4  EandV.o [1]
+    .bss                zero     0x20000648     0x4  EandV.o [1]
+    .bss                zero     0x2000064c     0x4  EandV.o [1]
+    .bss                zero     0x20000650     0x4  EandV.o [1]
+    .bss                zero     0x20000654     0x4  EandV.o [1]
+    .bss                zero     0x20000658     0x4  EandV.o [1]
+    .bss                zero     0x2000065c     0x4  EandV.o [1]
+    .bss                zero     0x20000660     0x4  EandV.o [1]
+    .bss                zero     0x20000664     0x4  EandV.o [1]
+    .bss                zero     0x20000668     0x4  EandV.o [1]
+    .bss                zero     0x2000066c     0x4  EandV.o [1]
+    .bss                zero     0x20000670     0x4  EandV.o [1]
+    .bss                zero     0x20000674     0x4  EandV.o [1]
+    .bss                zero     0x20000678     0x4  EandV.o [1]
+    .bss                zero     0x2000067c     0x4  EandV.o [1]
+    .bss                zero     0x20000680     0x4  EandV.o [1]
+    .bss                zero     0x20000684     0x4  EandV.o [1]
+    .bss                zero     0x20000688     0x4  EandV.o [1]
+    .bss                zero     0x2000068c    0x10  fsl_debug_console.o [1]
+    .bss                zero     0x2000069c     0x4  fsl_hwtimer_systick.o [1]
+    .bss                zero     0x200006a0     0x4  fsl_mcg_hal.o [1]
+    .bss                zero     0x200006a4     0x4  LQ_PLL.o [1]
+    .bss                zero     0x200006a8     0x4  LQ_PLL.o [1]
+    .bss                zero     0x200006ac    0x14  LQIIC6050.o [1]
+    .bss                zero     0x200006c0    0x14  LQIIC6050.o [1]
+    .bss                zero     0x200006d4    0x14  LQIIC6050.o [1]
+    .bss                zero     0x200006e8     0x4  LQIIC6050.o [1]
+    .bss                zero     0x200006ec     0x4  LQIIC6050.o [1]
+    .bss                zero     0x200006f0     0x4  LQIIC6050.o [1]
+    .bss                zero     0x200006f4     0x4  LQIIC6050.o [1]
+    .bss                zero     0x200006f8     0x4  LQIIC6050.o [1]
+    .bss                zero     0x200006fc     0x4  LQIIC6050.o [1]
+    .bss                zero     0x20000700     0x4  LQIIC6050.o [1]
+    .bss                zero     0x20000704     0x4  LQMT9V034.o [1]
+    .bss                zero     0x20000708     0x4  LQMT9V034.o [1]
+    .bss                zero     0x2000070c     0x4  LQMT9V034.o [1]
+    .bss                zero     0x20000710  0x1608  LQMT9V034.o [1]
+    .bss                zero     0x20001d18  0x5820  LQMT9V034.o [1]
+    .bss                zero     0x20007538  0x1608  LQMT9V034.o [1]
+    .bss                zero     0x20008b40  0x2c10  LQMT9V034.o [1]
+    .bss                zero     0x2000b750     0x4  LQMT9V034.o [1]
+    .bss                zero     0x2000b754     0x4  LQMT9V034.o [1]
+    .bss                zero     0x2000b758     0x4  LQMT9V034.o [1]
+    .bss                zero     0x2000b75c     0x4  LQMT9V034.o [1]
+    .bss                zero     0x2000b760     0x4  LQMT9V034.o [1]
+    .bss                zero     0x2000b764     0x4  LQMT9V034.o [1]
+    .bss                zero     0x2000b768     0x4  LQMT9V034.o [1]
+    .bss                zero     0x2000b76c     0x4  LQUART.o [1]
+    .bss                zero     0x2000b770     0x4  LQUART.o [1]
+    .bss                zero     0x2000b774     0x4  LQUART.o [1]
+    .bss                zero     0x2000b778     0x4  LQUART.o [1]
+    .bss                zero     0x2000b77c     0x4  LQUART.o [1]
+    .bss                zero     0x2000b780     0x4  tuxiang.o [1]
+    .bss                zero     0x2000b784     0x8  tuxiang.o [1]
+    .bss                zero     0x2000b78c     0x8  tuxiang.o [1]
+    .bss                zero     0x2000b794     0x4  tuxiang.o [1]
+    .bss                zero     0x2000b798     0x4  tuxiang.o [1]
+    .bss                zero     0x2000b79c     0x4  tuxiang.o [1]
+    .bss                zero     0x2000b7a0    0xf0  tuxiang.o [1]
+    .bss                zero     0x2000b890    0xf0  tuxiang.o [1]
+    .bss                zero     0x2000b980    0xf0  tuxiang.o [1]
+    .bss                zero     0x2000ba70    0xf0  tuxiang.o [1]
+    .bss                zero     0x2000bb60    0xf0  tuxiang.o [1]
+    .bss                zero     0x2000bc50     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc54     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc58     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc5c     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc60     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc64     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc68     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc6c     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc70     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc74     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc78     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc7c     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc80     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc84     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc88     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc8c     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc90     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc94     0x4  tuxiang.o [1]
+    .bss                zero     0x2000bc98     0x1  DianCi_BianCha.o [1]
+    .bss                zero     0x2000bc99     0x1  DianCi_BianCha.o [1]
+    .bss                zero     0x2000bc9a     0x1  EandV.o [1]
+    .bss                zero     0x2000bc9b     0x1  EandV.o [1]
+    .bss                zero     0x2000bc9c     0x1  EandV.o [1]
+    .bss                zero     0x2000bc9d     0x1  EandV.o [1]
+    .bss                zero     0x2000bc9e     0x1  EandV.o [1]
+    .bss                zero     0x2000bc9f     0x1  EandV.o [1]
+    .bss                zero     0x2000bca0     0x1  EandV.o [1]
+    .bss                zero     0x2000bca1     0x1  EandV.o [1]
+    .bss                zero     0x2000bca2     0x1  EandV.o [1]
+    .bss                zero     0x2000bca3     0x1  EandV.o [1]
+    .bss                zero     0x2000bca4     0x1  Handle.o [1]
+    .bss                zero     0x2000bca5     0x1  LQIIC6050.o [1]
+    .bss                zero     0x2000bca6     0x1  LQMT9V034.o [1]
+    .bss                zero     0x2000bca7     0x1  LQMT9V034.o [1]
+    .bss                zero     0x2000bca8     0x1  LQMT9V034.o [1]
+    .bss                zero     0x2000bca9     0x1  LQMT9V034.o [1]
+    .bss                zero     0x2000bcaa     0x1  LQMT9V034.o [1]
+    .bss                zero     0x2000bcab     0x1  LQPIT.o [1]
+    .bss                zero     0x2000bcac     0x1  LQPIT.o [1]
+    .bss                zero     0x2000bcad     0x1  LQPIT.o [1]
+    .bss                zero     0x2000bcae     0x1  LQPIT.o [1]
+    .bss                zero     0x2000bcaf     0x1  tuxiang.o [1]
+    .bss                zero     0x2000bcb0     0x1  tuxiang.o [1]
+    .bss                zero     0x2000bcb1     0x1  tuxiang.o [1]
+    .bss                zero     0x2000bcb2     0x1  tuxiang.o [1]
+    .bss                zero     0x2000bcb3     0x1  tuxiang.o [1]
+    .bss                zero     0x2000bcb4     0x1  tuxiang.o [1]
+    .bss                zero     0x2000bcb5     0x1  tuxiang.o [1]
+    .bss                zero     0x2000bcb6     0x1  tuxiang.o [1]
+    .bss                zero     0x2000bcb7     0x1  tuxiang.o [1]
+                               - 0x2000bcb8  0xb84c
+
+"P6":                                         0x400
+  CSTACK                         0x2001fc00   0x400  <Block>
+    CSTACK              uninit   0x2001fc00   0x400  <Block tail>
+                               - 0x20020000   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xb84c:
+          0x2000046c  0xb84c
+
+Copy/lz77 (__iar_lz77_init3)
+    1 source range, total size 0x2ad (60% of destination):
+          0x1000a4c4   0x2ad
+    1 destination range, total size 0x46a:
+          0x20000000   0x46a
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                      ro code  rw code  ro data  rw data
+    ------                      -------  -------  -------  -------
+E:\新潮\宝\7.4 - 副本\debug\obj: [1]
+    APPmain.o                        12
+    DianCi_BianCha.o              6 580                10      282
+    EandV.o                       5 172               252      706
+    Handle.o                      1 076                          1
+    LPTMR.o                         196
+    LQ12864SPI.o                    896               552
+    LQADC.o                         188
+    LQFTM.o                         886
+    LQGPIO.o                        316                24       40
+    LQIIC6050.o                   2 292                67       93
+    LQMT9V034.o                   3 732      572      363   45 165
+    LQPIT.o                         380                          4
+    LQUART.o                      1 296                29       68
+    LQ_KEY.o                        204
+    LQ_LED.o                        472
+    LQ_PLL.o                        408               168        8
+    System.o                        452
+    avoid.o                                             4        8
+    fsl_clock_MKV58F24.o            204               100
+    fsl_clock_manager.o             796               196
+    fsl_clock_manager_common.o                          4
+    fsl_debug_console.o              68                         16
+    fsl_hwtimer_systick.o            68                          4
+    fsl_hwtimer_systick_irq.o        16
+    fsl_mcg_hal.o                   916                21       12
+    fsl_mcg_hal_modes.o           1 292
+    fsl_osc_hal.o                    12
+    fsl_sim_hal_MKV58F24.o           58
+    fsl_smc_hal.o                   400
+    startup.o                        68
+    startup_MKV58F24.o            1 088
+    system_MKV58F24.o               208                 2        4
+    tuxiang.o                     4 384                 7    1 323
+    u_iic.o                         986
+    --------------------------------------------------------------
+    Total:                       35 122      572    1 799   47 734
+
+command line: [2]
+    --------------------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    abort.o                           6
+    errno.o                          12                 2        4
+    exit.o                            4
+    low_level_init.o                  4
+    printf.o                         36
+    putchar.o                        40
+    xprintfsmall.o                1 240
+    xprout.o                         22
+    xtls.o                            2
+    --------------------------------------------------------------
+    Total:                        1 366                 2        4
+
+m7M_tls.a: [4]
+    DblAdd.o                        232
+    DblCmpGe.o                       46
+    DblCmpLe.o                       46
+    DblDiv.o                        598
+    DblMul.o                        418
+    DblSub.o                        384
+    DblToFlt.o                      144
+    DblToI32.o                       76
+    FltToDbl.o                       78
+    I32ToDbl.o                       48
+    I64ToFlt.o                       98
+    atan2.o                         244
+    fpinit_M.o                       34
+    sqrt.o                          256
+    xatan.o                         496
+    xdtest.o                         64
+    --------------------------------------------------------------
+    Total:                        3 262
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                      6
+    ABImemset48.o                    50
+    I64DivMod.o                     306
+    I64DivZer.o                       2
+    cexit.o                          10
+    cmain.o                          26
+    cstartup_M.o                     12
+    data_init.o                      40
+    iarEdom.o                        12
+    lz77_init.o                     470
+    memchr.o                         88
+    strchr.o                         22
+    strlen.o                         54
+    zero_init3.o                     64
+    --------------------------------------------------------------
+    Total:                        1 162
+
+shb_l.a: [6]
+    ABIassert.o                      36
+    exit.o                           20
+    --------------------------------------------------------------
+    Total:                           56
+
+    Gaps                             20                 8
+    Linker created                   24                44    1 024
+------------------------------------------------------------------
+    Grand Total:                 41 012      572    1 853   48 762
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x1000a2b8           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x1000a2e4           --   Gb  - Linker created -
+?main                   0x1000a321          Code  Gb  cmain.o [5]
+A                       0x2000b784     0x8  Data  Gb  tuxiang.o [1]
+ACC                     0x2000061c     0x8  Data  Gb  EandV.o [1]
+ACC_Offset              0x20000624     0x8  Data  Gb  EandV.o [1]
+ACC_Real                0x200005e8     0xc  Data  Gb  EandV.o [1]
+ACC_X_BUF               0x200006ac    0x14  Data  Gb  LQIIC6050.o [1]
+ACC_Y_BUF               0x200006c0    0x14  Data  Gb  LQIIC6050.o [1]
+ACC_Z_BUF               0x200006d4    0x14  Data  Gb  LQIIC6050.o [1]
+ACC_x                   0x2000b754     0x4  Data  Gb  LQMT9V034.o [1]
+ACC_y                   0x2000b750     0x4  Data  Gb  LQMT9V034.o [1]
+ADC0_Init               0x10001dc5    0x22  Code  Gb  LQADC.o [1]
+ADC0_Once               0x10001e3b    0x2c  Code  Gb  LQADC.o [1]
+ADC0_Start              0x10001de7    0x54  Code  Gb  LQADC.o [1]
+ADresult                0x20000478     0xc  Data  Gb  DianCi_BianCha.o [1]
+Ang_Vel                 0x20000078    0x10  Data  Gb  EandV.o [1]
+Ang_Vel_PID             0x20000594    0x10  Data  Gb  EandV.o [1]
+Ang_Velocity_Flag       0x2000bc9c     0x1  Data  Gb  EandV.o [1]
+Angle                   0x20000068    0x10  Data  Gb  EandV.o [1]
+Angle_Flag              0x2000bc9b     0x1  Data  Gb  EandV.o [1]
+Angle_PID               0x20000584    0x10  Data  Gb  EandV.o [1]
+Attitude_Angle          0x200005f4     0xc  Data  Gb  EandV.o [1]
+B                       0x2000b78c     0x8  Data  Gb  tuxiang.o [1]
+BOARD_InitOsc0          0x10009a99    0x16  Code  Gb  LQ_PLL.o [1]
+Balance_Control         0x10004a6d   0x7a2  Code  Gb  EandV.o [1]
+Balance_Init            0x10005901    0x1a  Code  Gb  EandV.o [1]
+Binaryzation_ZP         0x10004451    0x50  Code  Gb  LQMT9V034.o [1]
+CLOCK_HAL_EnablePll0InFllMode
+                        0x10008f2f    0x3a  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetClkOutStat
+                        0x10009041     0xe  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_GetClkOutStat
+                        0x10008ca1     0xe  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetClkOutStat
+                        0x10008795     0xe  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_GetFllClk     0x10008e11    0x4e  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetFllRefClk  0x10008d75    0x5c  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetFllSrc     0x100087a3     0xc  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_GetInternalRefClk
+                        0x10008f69    0x3e  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetInternalRefClkMode
+                        0x1000906b     0xc  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_GetInternalRefClkMode
+                        0x10008cb9     0xc  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetInternalRefClkMode
+                        0x100087af     0xc  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_GetMcgExternalClkFreq
+                        0x10008d2d     0xa  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetMcgMode    0x1000880f    0xba  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_GetOutClk     0x10008fa7    0x4c  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetOutDiv1    0x10009ed1    0x12  Code  Lc  fsl_clock_MKV58F24.o [1]
+CLOCK_HAL_GetPll0Clk    0x10008edb    0x54  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_GetPll0RefFreq
+                        0x10008ecf     0xc  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_IsOsc0Stable  0x10009083    0x18  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_IsOsc0Stable  0x10008cf5    0x18  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_IsOsc0Stable  0x100087f7    0x18  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_IsPll0Locked  0x10008cc5    0x18  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_IsPll0Locked  0x100087c7    0x18  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_IsPllSelected
+                        0x10008cdd    0x18  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_IsPllSelected
+                        0x100087df    0x18  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_PrepareOsc    0x10008d0d    0x20  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_SetBlpeMode   0x10008bcb    0x1e  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetBlpiMode   0x10008b8f    0x3c  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetClkOutSrc  0x10009035     0xc  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetExternalRefClock32kSrc
+                        0x10009ee3     0xe  Code  Lc  fsl_clock_MKV58F24.o [1]
+CLOCK_HAL_SetFbeMode    0x10008ac1    0xce  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetFbiMode    0x10008a01    0xc0  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetFeeMode    0x10008955    0xac  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetFeiMode    0x100088c9    0x8c  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetInternalRefClkEnableCmd
+                        0x1000904f     0xa  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetInternalRefClkEnableInStopCmd
+                        0x10009059     0x8  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetInternalRefClkMode
+                        0x10009061     0xa  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetInternalRefClkMode
+                        0x10008caf     0xa  Code  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_SetOsc0Mode   0x10008ff3    0x26  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_SetOutDiv     0x10009f9d    0x3a  Code  Gb  fsl_sim_hal_MKV58F24.o [1]
+CLOCK_HAL_SetPbeMode    0x10008be9    0x90  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetPeeMode    0x10008c79    0x1a  Code  Gb  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_SetPll0EnableCmd
+                        0x10009077     0xc  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_HAL_SetPll0EnableCmd
+                        0x100087bb     0xc  Code  Lc  fsl_mcg_hal_modes.o [1]
+CLOCK_HAL_TestFllExternalRefFreq
+                        0x10008d37    0x3e  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_TestFllFreq   0x10008dd1    0x40  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_HAL_TestFllFreq::fllFactorTable
+                        0x1000a43c    0x10  Data  Lc  fsl_mcg_hal.o [1]
+CLOCK_HAL_UpdateFastClkInternalRefDiv
+                        0x10008e5f    0x70  Code  Gb  fsl_mcg_hal.o [1]
+CLOCK_SYS_FllStableDelay
+                        0x100090c1    0x12  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_SYS_GetCoreClockFreq
+                        0x10009f69    0x18  Code  Gb  fsl_clock_MKV58F24.o [1]
+CLOCK_SYS_McgModeToIdx  0x100090d3    0x30  Code  Lc  fsl_clock_manager.o [1]
+CLOCK_SYS_OscInit       0x1000926b    0x92  Code  Gb  fsl_clock_manager.o [1]
+CLOCK_SYS_SetConfiguration
+                        0x10009f15    0x54  Code  Gb  fsl_clock_MKV58F24.o [1]
+CLOCK_SYS_SetMcgMode    0x10009103   0x168  Code  Gb  fsl_clock_manager.o [1]
+CLOCK_SYS_SetOscerConfigration
+                        0x100092fd    0x2c  Code  Gb  fsl_clock_manager.o [1]
+CLOCK_SYS_SetSimConfigration
+                        0x10009ef1    0x24  Code  Gb  fsl_clock_MKV58F24.o [1]
+CSTACK$$Base            0x2001fc00           --   Gb  - Linker created -
+CSTACK$$Limit           0x20020000           --   Gb  - Linker created -
+DMATransDataInit        0x20000229   0x196  Code  Gb  LQMT9V034.o [1]
+DMATransDataStart       0x200003bf    0x3e  Code  Gb  LQMT9V034.o [1]
+Data                    0x20000684     0x4  Data  Gb  EandV.o [1]
+Data_Filter             0x10006731   0x29c  Code  Gb  LQIIC6050.o [1]
+Direct                  0x20000048    0x10  Data  Gb  EandV.o [1]
+Direct_Last             0x2000064c     0x4  Data  Gb  EandV.o [1]
+Direct_PID              0x200005a4    0x10  Data  Gb  EandV.o [1]
+Direct_Parameter        0x20000648     0x4  Data  Gb  EandV.o [1]
+Direct_Parameter_Last   0x20000654     0x4  Data  Gb  EandV.o [1]
+Distance_PID            0x200005c4    0x10  Data  Gb  EandV.o [1]
+Draw_Road               0x10003c69   0x13a  Code  Gb  LQMT9V034.o [1]
+EXTI_Init               0x1000345b    0x54  Code  Gb  LQGPIO.o [1]
+F6x8                    0x1000939c   0x228  Data  Gb  LQ12864SPI.o [1]
+FTM_AB_Get              0x1000721b     0xc  Code  Gb  LQFTM.o [1]
+FTM_AB_Init             0x1000711b   0x100  Code  Gb  LQFTM.o [1]
+FTM_PWM_Duty            0x1000710f     0xc  Code  Gb  LQFTM.o [1]
+FTM_PWM_Init            0x10006f21   0x1ee  Code  Gb  LQFTM.o [1]
+Field_Over_Flag         0x2000bca8     0x1  Data  Gb  LQMT9V034.o [1]
+Find_disconnect         0x10003843    0xb6  Code  Gb  LQMT9V034.o [1]
+Fres                    0x2000bca4     0x1  Data  Gb  Handle.o [1]
+Fresight_Calculate      0x10004639    0xc0  Code  Gb  Handle.o [1]
+Fresight_Calculate_dianci
+                        0x100046f9   0x338  Code  Gb  Handle.o [1]
+GPIOX                   0x200001c0    0x14  Data  Gb  LQGPIO.o [1]
+GPIO_Get                0x10003443    0x18  Code  Gb  LQGPIO.o [1]
+GPIO_Init               0x100033ad    0x88  Code  Gb  LQGPIO.o [1]
+GPIO_Reverse            0x10003435     0xe  Code  Gb  LQGPIO.o [1]
+GYRO                    0x2000060c     0x8  Data  Gb  EandV.o [1]
+GYRO_Offset             0x20000614     0x8  Data  Gb  EandV.o [1]
+GYRO_Real               0x200005dc     0xc  Data  Gb  EandV.o [1]
+GYRO_X_BUF              0x200006e8     0x4  Data  Gb  LQIIC6050.o [1]
+GYRO_Y_BUF              0x200006ec     0x4  Data  Gb  LQIIC6050.o [1]
+GYRO_Z_BUF              0x200006f0     0x4  Data  Gb  LQIIC6050.o [1]
+GetOSTU                 0x10004231   0x220  Code  Gb  LQMT9V034.o [1]
+Get_Use_Image           0x200003fd    0x3a  Code  Gb  LQMT9V034.o [1]
+HWTIMER_SYS_SystickIsrAction
+                        0x1000a13d    0x3a  Code  Gb  fsl_hwtimer_systick.o [1]
+IIC_Ack                 0x100074c5    0x4c  Code  Gb  u_iic.o [1]
+IIC_Init                0x10007399    0x34  Code  Gb  u_iic.o [1]
+IIC_NAck                0x10007511    0x4c  Code  Gb  u_iic.o [1]
+IIC_ReadByte            0x100075c7    0x68  Code  Gb  u_iic.o [1]
+IIC_ReadByteFromSlave   0x1000763d    0x50  Code  Gb  u_iic.o [1]
+IIC_ReadMultByteFromSlave
+                        0x100076dd    0x8a  Code  Gb  u_iic.o [1]
+IIC_SendByte            0x1000755d    0x6a  Code  Gb  u_iic.o [1]
+IIC_Start               0x100073cd    0x4c  Code  Gb  u_iic.o [1]
+IIC_Stop                0x10007419    0x4c  Code  Gb  u_iic.o [1]
+IIC_WaitAck             0x10007465    0x60  Code  Gb  u_iic.o [1]
+IIC_WriteByteToSlave    0x1000768d    0x50  Code  Gb  u_iic.o [1]
+Image_Data              0x20001d18  0x5820  Data  Gb  LQMT9V034.o [1]
+Image_Use               0x20007538  0x1608  Data  Gb  LQMT9V034.o [1]
+Imagebuf                0x20000710  0x1608  Data  Gb  LQMT9V034.o [1]
+InStream_Read           0x100095d9    0x26  Code  Lc  lz77_init.o [5]
+InStream_StepRegion     0x100095c5    0x14  Code  Lc  lz77_init.o [5]
+KEY_Init                0x10009af9    0x28  Code  Gb  LQ_KEY.o [1]
+K_x                     0x20000688     0x4  Data  Gb  EandV.o [1]
+KalmanFilter            0x100069d1   0x20a  Code  Gb  LQIIC6050.o [1]
+KalmanFilter::Posterior_Convariance
+                        0x20000700     0x4  Data  Lc  LQIIC6050.o [1]
+KalmanFilter::Posterior_Estimation
+                        0x200006f8     0x4  Data  Lc  LQIIC6050.o [1]
+KalmanFilter::Priori_Convariance
+                        0x200006fc     0x4  Data  Lc  LQIIC6050.o [1]
+KalmanFilter::Priori_Estimation
+                        0x200006f4     0x4  Data  Lc  LQIIC6050.o [1]
+KalmanGain              0x200001e8     0x4  Data  Gb  LQIIC6050.o [1]
+LCD_CLS                 0x10006021    0x38  Code  Gb  LQ12864SPI.o [1]
+LCD_Fill                0x10005fe5    0x3c  Code  Gb  LQ12864SPI.o [1]
+LCD_Init                0x10006059   0x14c  Code  Gb  LQ12864SPI.o [1]
+LCD_P6x8Str             0x100061a5    0x74  Code  Gb  LQ12864SPI.o [1]
+LCD_Set_Pos             0x10005fbd    0x28  Code  Gb  LQ12864SPI.o [1]
+LCD_WrCmd               0x10005f2d    0x90  Code  Gb  LQ12864SPI.o [1]
+LCD_WrDat               0x10005ea1    0x8a  Code  Gb  LQ12864SPI.o [1]
+LED_Ctrl                0x100020d5   0x194  Code  Gb  LQ_LED.o [1]
+LED_Init                0x100020a1    0x34  Code  Gb  LQ_LED.o [1]
+LPTMR0_IRQHandler       0x1000736b     0xe  Code  Gb  LPTMR.o [1]
+LPTMR_delay_ms          0x100072d3    0x40  Code  Gb  LPTMR.o [1]
+LPTMR_delay_us          0x10007313    0x58  Code  Gb  LPTMR.o [1]
+Last_Error              0x2000b794     0x4  Data  Gb  tuxiang.o [1]
+Left_Crazy              0x2000bca0     0x1  Data  Gb  EandV.o [1]
+Left_huandao            0x2000056c     0x4  Data  Gb  DianCi_BianCha.o [1]
+Line_Cont               0x2000bca7     0x1  Data  Gb  LQMT9V034.o [1]
+Line_Draw               0x10003293    0x2e  Code  Gb  tuxiang.o [1]
+LoadInt                 0x10008039    0x4c  Code  Lc  xprintfsmall.o [3]
+MOTOR                   0x20000058    0x10  Data  Gb  EandV.o [1]
+MOTOR_Duty_Left         0x200005d4     0x4  Data  Gb  EandV.o [1]
+MOTOR_Duty_Right        0x200005d8     0x4  Data  Gb  EandV.o [1]
+MOTOR_Left_Acc          0x20000668     0x4  Data  Gb  EandV.o [1]
+MOTOR_PID               0x20000574    0x10  Data  Gb  EandV.o [1]
+MOTOR_Right_Acc         0x2000066c     0x4  Data  Gb  EandV.o [1]
+MOTOR_Speed_Left        0x20000658     0x4  Data  Gb  EandV.o [1]
+MOTOR_Speed_Left_Last   0x20000660     0x4  Data  Gb  EandV.o [1]
+MOTOR_Speed_Right       0x2000065c     0x4  Data  Gb  EandV.o [1]
+MOTOR_Speed_Right_Last  0x20000664     0x4  Data  Gb  EandV.o [1]
+MPU6050_GetData         0x1000662b   0x104  Code  Gb  LQIIC6050.o [1]
+MPU6050_Init            0x100064a9    0xbe  Code  Gb  LQIIC6050.o [1]
+MPU6050_Offset          0x10006be5   0x152  Code  Gb  LQIIC6050.o [1]
+MPU_Read_Byte           0x10006619    0x12  Code  Gb  LQIIC6050.o [1]
+MPU_Set_Accel_Fsr       0x10006577    0x10  Code  Gb  LQIIC6050.o [1]
+MPU_Set_Gyro_Fsr        0x10006567    0x10  Code  Gb  LQIIC6050.o [1]
+MPU_Set_LPF             0x10006587    0x44  Code  Gb  LQIIC6050.o [1]
+MPU_Set_Rate            0x100065cb    0x40  Code  Gb  LQIIC6050.o [1]
+MPU_Write_Byte          0x1000660b     0xe  Code  Gb  LQIIC6050.o [1]
+MT9V034_Init            0x100038f9   0x22e  Code  Gb  LQMT9V034.o [1]
+MT9V034_SetAutoExposure
+                        0x10003bd1    0x46  Code  Gb  LQMT9V034.o [1]
+MT9V034_SetFrameResolution
+                        0x10003b27    0xaa  Code  Gb  LQMT9V034.o [1]
+Middle_Error            0x2000b79c     0x4  Data  Gb  tuxiang.o [1]
+Middle_Line             0x2000b7a0    0xf0  Data  Gb  tuxiang.o [1]
+Mode_Set                0x2000bcaa     0x1  Data  Gb  LQMT9V034.o [1]
+NVIC_EnableIRQ          0x10003399    0x14  Code  Lc  LQGPIO.o [1]
+NVIC_EnableIRQ          0x10009bc5    0x14  Code  Lc  LQPIT.o [1]
+NVIC_EnableIRQ          0x10008285    0x16  Code  Lc  LQUART.o [1]
+NVIC_SetPriority        0x100097b9    0x22  Code  Lc  System.o [1]
+NVIC_SetPriorityGrouping
+                        0x1000979d    0x1c  Code  Lc  System.o [1]
+OSC_HAL_SetCapacitor    0x10009375     0xc  Code  Gb  fsl_osc_hal.o [1]
+OSC_HAL_SetExternalRefClkCmd
+                        0x1000909b     0xa  Code  Lc  fsl_clock_manager.o [1]
+OSC_HAL_SetExternalRefClkDiv
+                        0x100090af    0x12  Code  Lc  fsl_clock_manager.o [1]
+OSC_HAL_SetExternalRefClkInStopModeCmd
+                        0x100090a5     0xa  Code  Lc  fsl_clock_manager.o [1]
+Obstacle_flag           0x2000bca9     0x1  Data  Gb  LQMT9V034.o [1]
+Offset_OK               0x2000bca5     0x1  Data  Gb  LQIIC6050.o [1]
+OutStream_Write         0x100095ff    0x40  Code  Lc  lz77_init.o [5]
+PID_Increase            0x100058a9    0x58  Code  Gb  EandV.o [1]
+PID_Parameter_Init      0x10005945    0x12  Code  Gb  EandV.o [1]
+PID_Realize             0x1000521d    0x94  Code  Gb  EandV.o [1]
+PIT0_IRQHandler         0x10009c3b    0x88  Code  Gb  LQPIT.o [1]
+PIT0_IRQHandler::Time_100ms
+                        0x2000bcad     0x1  Data  Lc  LQPIT.o [1]
+PIT0_IRQHandler::Time_10ms
+                        0x2000bcab     0x1  Data  Lc  LQPIT.o [1]
+PIT0_IRQHandler::Time_200ms
+                        0x2000bcae     0x1  Data  Lc  LQPIT.o [1]
+PIT0_IRQHandler::Time_50ms
+                        0x2000bcac     0x1  Data  Lc  LQPIT.o [1]
+PIT1_IRQHandler         0x10009cc3     0xe  Code  Gb  LQPIT.o [1]
+PIT2_IRQHandler         0x10009cd1    0x14  Code  Gb  LQPIT.o [1]
+PIT3_IRQHandler         0x10009ce5     0xe  Code  Gb  LQPIT.o [1]
+PIT_Init                0x10009bd9    0x62  Code  Gb  LQPIT.o [1]
+PLL150MHz               0x1000a35c    0x18  Data  Gb  LQ_PLL.o [1]
+PLL180MHz               0x1000a374    0x18  Data  Gb  LQ_PLL.o [1]
+PLL200MHz               0x1000a38c    0x18  Data  Gb  LQ_PLL.o [1]
+PLL235MHz               0x1000a3a4    0x18  Data  Gb  LQ_PLL.o [1]
+PLL250MHz               0x1000a3bc    0x18  Data  Gb  LQ_PLL.o [1]
+PLL275MHz               0x1000a3d4    0x18  Data  Gb  LQ_PLL.o [1]
+PLL_Init                0x10009965   0x134  Code  Gb  LQ_PLL.o [1]
+PORTB_IRQHandler        0x10009b49    0x70  Code  Gb  LQ_KEY.o [1]
+PORTD_IRQHandler        0x10003625    0x86  Code  Gb  LQMT9V034.o [1]
+PORTX                   0x200001d4    0x14  Data  Gb  LQGPIO.o [1]
+Pixle                   0x20008b40  0x2c10  Data  Gb  LQMT9V034.o [1]
+PlacePID_Control        0x10005959   0x19e  Code  Gb  EandV.o [1]
+PulsesL                 0x20000674     0x4  Data  Gb  EandV.o [1]
+PulsesR                 0x20000678     0x4  Data  Gb  EandV.o [1]
+RW$$Base                0x20000000           --   Gb  - Linker created -
+RW$$Limit               0x2000046a           --   Gb  - Linker created -
+Radius                  0x20000650     0x4  Data  Gb  EandV.o [1]
+Radius_PID              0x10005b35   0x17c  Code  Gb  EandV.o [1]
+Region$$Table$$Base     0x1000a2b8           --   Gb  - Linker created -
+Region$$Table$$Limit    0x1000a2e4           --   Gb  - Linker created -
+Right_Crazy             0x2000bca1     0x1  Data  Gb  EandV.o [1]
+Right_huandao           0x20000570     0x4  Data  Gb  DianCi_BianCha.o [1]
+Round_right             0x10002a5f    0xa4  Code  Gb  tuxiang.o [1]
+Run_Flag                0x2000bc9e     0x1  Data  Gb  EandV.o [1]
+SCB_EnableDCache        0x10009ffd    0x5a  Code  Lc  system_MKV58F24.o [1]
+SCB_EnableICache        0x10009fd9    0x24  Code  Lc  system_MKV58F24.o [1]
+SCCB_Ack                0x1000405f    0x70  Code  Lc  LQMT9V034.o [1]
+SCCB_Init               0x10003ded    0x20  Code  Gb  LQMT9V034.o [1]
+SCCB_NAck               0x100040d5    0x74  Code  Lc  LQMT9V034.o [1]
+SCCB_ReadByte           0x10003fd5    0x8a  Code  Gb  LQMT9V034.o [1]
+SCCB_RegRead            0x100041cb    0x5c  Code  Gb  LQMT9V034.o [1]
+SCCB_RegWrite           0x10004155    0x76  Code  Gb  LQMT9V034.o [1]
+SCCB_SendByte           0x10003efd    0xd0  Code  Gb  LQMT9V034.o [1]
+SCCB_Star               0x10003e23    0x74  Code  Gb  LQMT9V034.o [1]
+SCCB_Stop               0x10003e97    0x64  Code  Gb  LQMT9V034.o [1]
+SCCB_Wait               0x10003e11    0x12  Code  Gb  LQMT9V034.o [1]
+SMC_HAL_GetStat         0x10009ecd     0x4  Code  Gb  fsl_smc_hal.o [1]
+SMC_HAL_SetMode         0x10009d8f   0x130  Code  Gb  fsl_smc_hal.o [1]
+SMC_HAL_SetPowerModeHsrun
+                        0x10009d75    0x1a  Code  Lc  fsl_smc_hal.o [1]
+SMC_HAL_SetPowerModeRun
+                        0x10009d41    0x1a  Code  Lc  fsl_smc_hal.o [1]
+SMC_HAL_SetPowerModeVlpr
+                        0x10009d5b    0x1a  Code  Lc  fsl_smc_hal.o [1]
+SMC_HAL_SetProtection   0x10009961     0x4  Code  Lc  LQ_PLL.o [1]
+SW_Key_Init             0x10009b21    0x28  Code  Gb  LQ_KEY.o [1]
+Speed                   0x10005db1    0x34  Code  Gb  EandV.o [1]
+Speed_Control           0x100057bd    0xd6  Code  Gb  EandV.o [1]
+Speed_Flag              0x2000bc9a     0x1  Data  Gb  EandV.o [1]
+Speed_Measure           0x100052c3   0x426  Code  Gb  EandV.o [1]
+Speed_Measure::Crazy_Count
+                        0x20000680     0x4  Data  Lc  EandV.o [1]
+Speed_Measure::Speed_Last
+                        0x2000067c     0x4  Data  Lc  EandV.o [1]
+Speed_Min               0x2000063c     0x4  Data  Gb  EandV.o [1]
+Speed_Now               0x20000638     0x4  Data  Gb  EandV.o [1]
+Speed_Set               0x20000640     0x4  Data  Gb  EandV.o [1]
+Stop_Flag               0x2000bc9f     0x1  Data  Gb  EandV.o [1]
+Sum_Error               0x2000b798     0x4  Data  Gb  tuxiang.o [1]
+SysTick_Handler         0x1000a47d    0x10  Code  Gb  fsl_hwtimer_systick_irq.o [1]
+SystemCoreClock         0x2000021c     0x4  Data  Gb  system_MKV58F24.o [1]
+SystemInit              0x1000a057    0x30  Code  Gb  system_MKV58F24.o [1]
+System_Init             0x100097dd   0x138  Code  Gb  System.o [1]
+System_OK               0x2000bc9d     0x1  Data  Gb  EandV.o [1]
+Tar_Ang_Vel             0x2000062c     0xc  Data  Gb  EandV.o [1]
+Target_Angle            0x20000600     0xc  Data  Gb  EandV.o [1]
+Test_LQV034             0x100036ad   0x152  Code  Gb  LQMT9V034.o [1]
+Test_MOTOR_Control      0x100056f9    0xb4  Code  Gb  EandV.o [1]
+Theory_Duty             0x20000644     0x4  Data  Gb  EandV.o [1]
+Threshold               0x2000bca6     0x1  Data  Gb  LQMT9V034.o [1]
+Turn_DianCi             0x20000118    0xa0  Data  Gb  EandV.o [1]
+Turn_PID                0x200005b4    0x10  Data  Gb  EandV.o [1]
+UART0_RX_TX_IRQHandler  0x1000856b    0x14  Code  Gb  LQUART.o [1]
+UART1_RX_TX_IRQHandler  0x1000857f    0x14  Code  Gb  LQUART.o [1]
+UART2_RX_TX_IRQHandler  0x10008593    0x14  Code  Gb  LQUART.o [1]
+UART3_RX_TX_IRQHandler  0x100085a7    0x9e  Code  Gb  LQUART.o [1]
+UART3_RX_TX_IRQHandler::a
+                        0x20000204     0xc  Data  Lc  LQUART.o [1]
+UART3_RX_TX_IRQHandler::flag
+                        0x2000b770     0x4  Data  Lc  LQUART.o [1]
+UART3_RX_TX_IRQHandler::ii
+                        0x2000b76c     0x4  Data  Lc  LQUART.o [1]
+UART4_RX_TX_IRQHandler  0x10008645    0xb8  Code  Gb  LQUART.o [1]
+UART4_RX_TX_IRQHandler::a
+                        0x20000210     0xc  Data  Lc  LQUART.o [1]
+UART4_RX_TX_IRQHandler::flag
+                        0x2000b778     0x4  Data  Lc  LQUART.o [1]
+UART4_RX_TX_IRQHandler::ii
+                        0x2000b774     0x4  Data  Lc  LQUART.o [1]
+UART4_RX_TX_IRQHandler::k
+                        0x2000b77c     0x4  Data  Lc  LQUART.o [1]
+UART5_RX_TX_IRQHandler  0x100086fd    0x14  Code  Gb  LQUART.o [1]
+UARTN                   0x200001ec    0x18  Data  Gb  LQUART.o [1]
+UART_Get_Char           0x10008483    0x1e  Code  Gb  LQUART.o [1]
+UART_Init               0x1000829b   0x1e8  Code  Gb  LQUART.o [1]
+UART_Irq_En             0x100084bf    0xac  Code  Gb  LQUART.o [1]
+UART_Put_Char           0x100084a1    0x1e  Code  Gb  LQUART.o [1]
+ZI$$Base                0x2000046c           --   Gb  - Linker created -
+ZI$$Limit               0x2000bcb8           --   Gb  - Linker created -
+_LitobSmall             0x10008085    0xce  Code  Lc  xprintfsmall.o [3]
+_PrintfSmall            0x10007cb1   0x382  Code  Gb  xprintfsmall.o [3]
+_Prout                  0x1000a3ed    0x16  Code  Gb  xprout.o [3]
+_PutcharsSmall          0x10008153    0x2e  Code  Lc  xprintfsmall.o [3]
+__RAM_VECTOR_TABLE_SIZE {Abs}
+                        0x00000000          Data  Gb  command line/config [2]
+__VECTOR_RAM {Abs}      0x10000000          Data  Gb  command line/config [2]
+__VECTOR_TABLE {Abs}    0x10000000          Data  Gb  command line/config [2]
+__Vectors               0x10000000           --   Gb  startup_MKV58F24.o [1]
+__Vectors_End           0x10000400          Data  Gb  startup_MKV58F24.o [1]
+__Vectors_Size {Abs}    0x00000400           --   Gb  startup_MKV58F24.o [1]
+__aeabi_assert          0x10009351    0x24  Code  Gb  ABIassert.o [6]
+__aeabi_cdcmple         0x10006479          Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x10007299          Code  Gb  DblCmpGe.o [4]
+__aeabi_d2f             0x10006e91          Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x10002055          Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x10003525          Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x10006221          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x10001eb1          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x100044b9          Code  Gb  DblSub.o [4]
+__aeabi_errno_addr      0x10008275     0x6  Code  Gb  errno.o [3]
+__aeabi_f2d             0x100034d5          Code  Gb  FltToDbl.o [4]
+__aeabi_i2d             0x10001e81          Code  Gb  I32ToDbl.o [4]
+__aeabi_l2f             0x100078c1          Code  Gb  I64ToFlt.o [4]
+__aeabi_ldiv0           0x10008189          Code  Gb  I64DivZer.o [5]
+__aeabi_ldivmod         0x1000778d          Code  Gb  I64DivMod.o [5]
+__aeabi_memclr4         0x10007a25          Code  Gb  ABImemclr4.o [5]
+__aeabi_ui2d            0x10001e95          Code  Gb  I32ToDbl.o [4]
+__aeabi_ul2f            0x100078dd          Code  Gb  I64ToFlt.o [4]
+__aeabi_uldivmod        0x100077d1          Code  Gb  I64DivMod.o [5]
+__cmain                 0x1000a321          Code  Gb  cmain.o [5]
+__exit                  0x10009389    0x14  Code  Gb  exit.o [6]
+__iar_Atan              0x10007ac1   0x158  Code  Gb  xatan.o [4]
+__iar_Dtest             0x10007a2b    0x30  Code  Gb  xdtest.o [4]
+__iar_Errno             0x20000464     0x4  Data  Gb  errno.o [3]
+__iar_Memchr            0x1000821d          Code  Gb  memchr.o [5]
+__iar_Memset4_word      0x10008199          Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x10008199          Code  Gb  ABImemset48.o [5]
+__iar_Strchr            0x100081cd          Code  Gb  strchr.o [5]
+__iar_d2uiz             0x10002081          Code  Gb  DblToI32.o [4]
+__iar_dadd              0x10003539          Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x1000a26d    0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x10008281     0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x100044cd          Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x100044df          Code  Gb  DblSub.o [4]
+__iar_edom              0x1000818d          Code  Gb  iarEdom.o [5]
+__iar_init_vfp          0x1000a295          Code  Gb  fpinit_M.o [4]
+__iar_lz77_init3        0x1000963f   0x15c  Code  Gb  lz77_init.o [5]
+__iar_program_start     0x1000a499          Code  Gb  cstartup_M.o [5]
+__iar_sqrt              0x10007935          Code  Gb  sqrt.o [4]
+__iar_ui2d              0x10001e99          Code  Gb  I32ToDbl.o [4]
+__iar_ul2f              0x100078e9          Code  Gb  I64ToFlt.o [4]
+__iar_vfp_atan2         0x10006e7d    0x14  Code  Gb  atan2.o [4]
+__iar_vfp_sqrt          0x10007925          Code  Gb  sqrt.o [4]
+__iar_vfp_sqrtl         0x10007925          Code  Gb  sqrt.o [4]
+__iar_zero_init3        0x1000a205    0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x1000a33b     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x10000000          Data  Gb  startup_MKV58F24.o [1]
+__vector_table_0x1c     0x1000001c          Data  Gb  startup_MKV58F24.o [1]
+__write                 0x1000a0f9    0x44  Code  Wk  fsl_debug_console.o [1]
+_call_main              0x1000a32d          Code  Gb  cmain.o [5]
+_exit                   0x1000a351          Code  Gb  cexit.o [5]
+_main                   0x1000a337          Code  Gb  cmain.o [5]
+a                       0x10007c70    0x40  Data  Lc  xatan.o [4]
+abort                   0x10009381     0x6  Code  Gb  abort.o [3]
+ad1                     0x20000484    0x34  Data  Gb  DianCi_BianCha.o [1]
+ad2                     0x200004b8     0xc  Data  Gb  DianCi_BianCha.o [1]
+ad3                     0x200004c4    0x34  Data  Gb  DianCi_BianCha.o [1]
+ad4                     0x200004f8     0xc  Data  Gb  DianCi_BianCha.o [1]
+ad5                     0x20000504    0x14  Data  Gb  DianCi_BianCha.o [1]
+ad5_last0               0x20000528     0x4  Data  Gb  DianCi_BianCha.o [1]
+ad5_last1               0x2000052c     0x4  Data  Gb  DianCi_BianCha.o [1]
+ad5_last2               0x20000530     0x4  Data  Gb  DianCi_BianCha.o [1]
+ad5_last3               0x20000534     0x4  Data  Gb  DianCi_BianCha.o [1]
+ad5_right_last          0x20000524     0x4  Data  Gb  DianCi_BianCha.o [1]
+admax                   0x20000008     0xc  Data  Gb  DianCi_BianCha.o [1]
+admax_val               0x20000538     0xc  Data  Gb  DianCi_BianCha.o [1]
+admin                   0x2000046c     0xc  Data  Gb  DianCi_BianCha.o [1]
+arrange_ad              0x10000597    0x5a  Code  Gb  DianCi_BianCha.o [1]
+atan2                   0x10006d9d    0xd0  Code  Gb  atan2.o [4]
+average_ad              0x100004a5    0xf2  Code  Gb  DianCi_BianCha.o [1]
+black_left              0x2000b890    0xf0  Data  Gb  tuxiang.o [1]
+black_right             0x2000b980    0xf0  Data  Gb  tuxiang.o [1]
+bus_clk_M               0x200006a8     0x4  Data  Gb  LQ_PLL.o [1]
+buxianwan               0x2000bc5c     0x4  Data  Gb  tuxiang.o [1]
+camera                  0x10002cc5   0x4be  Code  Gb  tuxiang.o [1]
+chabihe                 0x2000b758     0x4  Data  Gb  LQMT9V034.o [1]
+chabihe1                0x20000548     0x4  Data  Gb  DianCi_BianCha.o [1]
+chabihe_0               0x2000bc98     0x1  Data  Gb  DianCi_BianCha.o [1]
+chabihe_last            0x20000520     0x4  Data  Gb  DianCi_BianCha.o [1]
+change                  0x10003805    0x3e  Code  Gb  LQMT9V034.o [1]
+clear_flag              0x2000bc8c     0x4  Data  Gb  tuxiang.o [1]
+cnt                     0x2000bc70     0x4  Data  Gb  tuxiang.o [1]
+core_clk_M              0x200006a4     0x4  Data  Gb  LQ_PLL.o [1]
+deep_y                  0x2000b760     0x4  Data  Gb  LQMT9V034.o [1]
+delay_us                0x1000738d     0xc  Code  Gb  u_iic.o [1]
+diangan                 0x2000b764     0x4  Data  Gb  LQMT9V034.o [1]
+dirrectPID              0x2000b75c     0x4  Data  Gb  LQMT9V034.o [1]
+disconnect_flag         0x2000b768     0x4  Data  Gb  LQMT9V034.o [1]
+distance                0x20000704     0x4  Data  Gb  LQMT9V034.o [1]
+distance1               0x2000bc58     0x4  Data  Gb  tuxiang.o [1]
+diszhidao_flag          0x2000bcb4     0x1  Data  Gb  tuxiang.o [1]
+end_hang_san_lun        0x20000469     0x1  Data  Gb  tuxiang.o [1]
+er                      0x2000bc78     0x4  Data  Gb  tuxiang.o [1]
+error_biancha           0x10002539   0x3c6  Code  Gb  tuxiang.o [1]
+exit                    0x1000a34b     0x4  Code  Gb  exit.o [3]
+filter_1_x              0x10005cd1    0xdc  Code  Gb  EandV.o [1]
+find_A_flag             0x2000bcaf     0x1  Data  Gb  tuxiang.o [1]
+find_B_flag             0x2000bcb0     0x1  Data  Gb  tuxiang.o [1]
+find_Black              0x10002a39    0x26  Code  Gb  tuxiang.o [1]
+find_C_flag             0x2000bc60     0x4  Data  Gb  tuxiang.o [1]
+find_O_flag             0x20000224     0x4  Data  Gb  tuxiang.o [1]
+find_White              0x100029e3    0x26  Code  Gb  tuxiang.o [1]
+find_change             0x10003191   0x102  Code  Gb  tuxiang.o [1]
+find_effected           0x10002279    0xc6  Code  Gb  tuxiang.o [1]
+find_ob                 0x10002905    0xb8  Code  Gb  tuxiang.o [1]
+ftm_clean               0x10007291     0x6  Code  Gb  LQFTM.o [1]
+g_fastInternalRefClkFreq
+                        0x200001b8     0x4  Data  Gb  fsl_mcg_hal.o [1]
+g_hwtimersSystick       0x2000069c     0x4  Data  Lc  fsl_hwtimer_systick.o [1]
+g_oscBase               0x1000a4bc     0x4  Data  Gb  fsl_clock_manager_common.o [1]
+g_slowInternalRefClkFreq
+                        0x200001bc     0x4  Data  Gb  fsl_mcg_hal.o [1]
+g_xtal0ClkFreq          0x200006a0     0x4  Data  Gb  fsl_mcg_hal.o [1]
+get                     0x20000220     0x4  Data  Gb  tuxiang.o [1]
+gether_ad_five_times    0x1000046b    0x3a  Code  Gb  DianCi_BianCha.o [1]
+gether_ad_once          0x10000411    0x5a  Code  Gb  DianCi_BianCha.o [1]
+huan                    0x20000544     0x4  Data  Gb  DianCi_BianCha.o [1]
+huandao_chu             0x2000bc99     0x1  Data  Gb  DianCi_BianCha.o [1]
+huandao_flag            0x2000bcb5     0x1  Data  Gb  tuxiang.o [1]
+init_data_bss           0x1000a181    0x44  Code  Gb  startup.o [1]
+jian                    0x20000564     0x4  Data  Gb  DianCi_BianCha.o [1]
+k                       0x2000bc64     0x4  Data  Gb  tuxiang.o [1]
+left_huandao_flag       0x2000bcb2     0x1  Data  Gb  tuxiang.o [1]
+lose_left               0x2000bb60    0xf0  Data  Gb  tuxiang.o [1]
+lose_left_flag          0x2000bc50     0x4  Data  Gb  tuxiang.o [1]
+lose_right              0x2000ba70    0xf0  Data  Gb  tuxiang.o [1]
+lose_right_flag         0x2000bc54     0x4  Data  Gb  tuxiang.o [1]
+main                    0x1000a33f     0xc  Code  Gb  APPmain.o [1]
+mcgModeMatrix           0x1000a1c4    0x40  Data  Lc  fsl_clock_manager.o [1]
+memchr                  0x1000821d          Code  Gb  memchr.o [5]
+new_flag_x              0x2000bca2     0x1  Data  Gb  EandV.o [1]
+normalization_ad        0x10000605  0x1758  Code  Gb  DianCi_BianCha.o [1]
+num_x                   0x2000bca3     0x1  Data  Gb  EandV.o [1]
+obstacle                0x2000bc68     0x4  Data  Gb  tuxiang.o [1]
+obstaclerow             0x2000bc6c     0x4  Data  Gb  tuxiang.o [1]
+one_obstacle            0x2000b780     0x4  Data  Gb  tuxiang.o [1]
+piancha                 0x10001d71    0x14  Code  Gb  DianCi_BianCha.o [1]
+printf                  0x10007769    0x24  Code  Gb  printf.o [3]
+putchar                 0x1000a245    0x28  Code  Gb  putchar.o [3]
+qqqqq                   0x20000568     0x4  Data  Gb  DianCi_BianCha.o [1]
+range_protect           0x100052b1    0x12  Code  Gb  EandV.o [1]
+remain_flag             0x2000bcb1     0x1  Data  Gb  tuxiang.o [1]
+right_huandao_flag      0x2000bcb3     0x1  Data  Gb  tuxiang.o [1]
+round_zuo               0x2000bc90     0x4  Data  Gb  tuxiang.o [1]
+s_debugConsole          0x2000068c    0x10  Data  Lc  fsl_debug_console.o [1]
+san                     0x2000bc7c     0x4  Data  Gb  tuxiang.o [1]
+sanlunAngle             0x20000028    0x10  Data  Gb  EandV.o [1]
+sanlunDirect            0x20000018    0x10  Data  Gb  EandV.o [1]
+sanlunMOTOR             0x20000038    0x10  Data  Gb  EandV.o [1]
+sanlunTurn              0x20000088    0x90  Data  Gb  EandV.o [1]
+sanlun_left_huandao_flag
+                        0x2000bcb6     0x1  Data  Gb  tuxiang.o [1]
+sanlun_obstacle_youchu  0x20000004     0x4  Data  Gb  avoid.o [1]
+sanlun_right_huandao_flag
+                        0x2000bcb7     0x1  Data  Gb  tuxiang.o [1]
+scan                    0x1000233f   0x1fa  Code  Gb  tuxiang.o [1]
+si                      0x2000bc80     0x4  Data  Gb  tuxiang.o [1]
+sqrt                    0x10007935          Code  Gb  sqrt.o [4]
+sqrtl                   0x10007935          Code  Gb  sqrt.o [4]
+start_hang_san_lun      0x20000468     0x1  Data  Gb  tuxiang.o [1]
+strchr                  0x100081cd          Code  Gb  strchr.o [5]
+strlen                  0x100081e5          Code  Gb  strlen.o [5]
+time1_flag              0x2000051c     0x4  Data  Gb  DianCi_BianCha.o [1]
+time_delay_ms           0x100072c9     0xa  Code  Gb  LPTMR.o [1]
+time_flag               0x20000518     0x4  Data  Gb  DianCi_BianCha.o [1]
+tramsform               0x10003c17    0x52  Code  Gb  LQMT9V034.o [1]
+yi                      0x2000bc74     0x4  Data  Gb  tuxiang.o [1]
+you_clear_flag          0x2000bc94     0x4  Data  Gb  tuxiang.o [1]
+you_out                 0x2000bc84     0x4  Data  Gb  tuxiang.o [1]
+youreplenish            0x10002b25    0xa4  Code  Gb  tuxiang.o [1]
+zhili_cnt               0x2000054c     0x4  Data  Gb  DianCi_BianCha.o [1]
+zhili_er                0x20000554     0x4  Data  Gb  DianCi_BianCha.o [1]
+zhili_find_Black        0x10002a09    0x30  Code  Gb  tuxiang.o [1]
+zhili_find_White        0x100029bd    0x26  Code  Gb  tuxiang.o [1]
+zhili_flag              0x20000670     0x4  Data  Gb  EandV.o [1]
+zhili_obstacle_youchu   0x20000000     0x4  Data  Gb  avoid.o [1]
+zhili_obzisuo           0x20000014     0x4  Data  Gb  DianCi_BianCha.o [1]
+zhili_san               0x20000558     0x4  Data  Gb  DianCi_BianCha.o [1]
+zhili_si                0x2000055c     0x4  Data  Gb  DianCi_BianCha.o [1]
+zhili_wu                0x20000560     0x4  Data  Gb  DianCi_BianCha.o [1]
+zhili_yi                0x20000550     0x4  Data  Gb  DianCi_BianCha.o [1]
+zhilidistance           0x20000708     0x4  Data  Gb  LQMT9V034.o [1]
+zhilidistance1          0x2000070c     0x4  Data  Gb  LQMT9V034.o [1]
+zuo_out                 0x2000bc88     0x4  Data  Gb  tuxiang.o [1]
+zuoreplenish            0x10002bd9    0xce  Code  Gb  tuxiang.o [1]
+
+
+[1] = E:\新潮\宝\7.4 - 副本\debug\obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  41 012 bytes of readonly  code memory
+     572 bytes of readwrite code memory
+   1 853 bytes of readonly  data memory
+  48 762 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,283 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[PEMICRODriver]
+PEM_LeaveTargetRunning=0x00000000
+[PE_STARTUP]
+CPUTARGETTYPENAME=_ "ARM Processor - Autodetect"
+USE_CYCLONEPRO_RELAYS=_ "0"
+CyclonePro_poweroffonexit=_ "0"
+CyclonePro_currentvoltage=_ "128"
+CyclonePro_PowerDownDelay=_ "250"
+CyclonePro_PowerUpDelay=_ "250"
+Multilink_PowerDownDelay=_ "250"
+Multilink_PowerUpDelay=_ "1000"
+USE_SWD=_ "0"
+IO_DELAY_CNT=_ "0"
+FREQ_FX=_ "4"
+FREQ_NORMAL=_ "0"
+FREQ_OSJTAG=_ "0"
+FREQ_CYCLONE=_ "3"
+FREQ_TRACELINK=_ "3"
+FREQ_LIGHTNING=_ "1"
+FREQ_OPENSDA=_ "3"
+RESET_DELAY=_ "0"
+PORT=_ "21"
+PORT_NAME_STRING=_ ""
+interface_selection=_ "1"
+TraceLink_MaxBufferSize=_ "1"
+SHOWDIALOG=_ "1"
+[PE_STORED_DEVICES]
+device0=_ "NXP_KVx_KV58F1M0M24"
+[PE_PEDEBUG]
+CURRENTDEVICE=_ "NXP_KVx_KV58F1M0M24"
+ERASE_PROGRAM_WITHOUT_ASKING=_ "1"
+CURRENTMODE=_ "4"
+[PE_DEVICE]
+CHIPMODE=_ "NXP_KVx_KV58F1M0M24"
+[DebugChecksum]
+Checksum=-1752517905
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[PE_SETTINGS]
+MEMORYSTART1=_ "0"
+MEMORYSTART2=_ "0"
+MEMORYSTART3=_ "0"
+DEFAULT_SOURCE_PATH=_ "F:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\pemicro\P&E"
+[PE_STARTUP12]
+show_hstep_assembly_details_new=_ "0"
+[PE_ARM]
+FILE1=_ ""
+BINTORAM=_ "1"
+BINTOFLASH=_ "0"
+BINTOFLASHDEFAULT=_ "0"
+GOTILMAINDEFAULTON=_ "1"
+KEEPCPROGOPEN=_ "0"
+[CodeCoverage]
+Enabled=_ 0
+[JLinkDriver]
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+ETM_Cookie=ID100_107000000000000000001
+ETM_Reg_GeneralControl=0x00022C08
+ETM_Reg_TriggerEvent=0x0000406F
+ETM_Reg_MemoryMapDecodeControl=0x00000000
+ETM_Reg_TraceStartStopControl=0x00000000
+ETM_Reg_TraceEnableControl2=0x00000000
+ETM_Reg_TraceEnableEvent=0x0000006F
+ETM_Reg_TraceEnableControl1=0x01000000
+ETM_Reg_FIFOFullRegion=0x01000000
+ETM_Reg_FIFOFullLevel=0x00000008
+ETM_Reg_ViewDataEvent=0x0000406F
+ETM_Reg_ViewDataControl1=0x00000000
+ETM_Reg_ViewDataControl2=0x00000000
+ETM_Reg_ViewDataControl3=0x00000000
+ETM_Reg_AddressComparator1=0x00000000
+ETM_Reg_AddressComparator2=0x00000000
+ETM_Reg_AddressComparator3=0x00000000
+ETM_Reg_AddressComparator4=0x00000000
+ETM_Reg_AddressComparator5=0x00000000
+ETM_Reg_AddressComparator6=0x00000000
+ETM_Reg_AddressComparator7=0x00000000
+ETM_Reg_AddressComparator8=0x00000000
+ETM_Reg_AddressComparator9=0x00000000
+ETM_Reg_AddressComparator10=0x00000000
+ETM_Reg_AddressComparator11=0x00000000
+ETM_Reg_AddressComparator12=0x00000000
+ETM_Reg_AddressComparator13=0x00000000
+ETM_Reg_AddressComparator14=0x00000000
+ETM_Reg_AddressComparator15=0x00000000
+ETM_Reg_AddressComparator16=0x00000000
+ETM_Reg_AddressAccessType1=0x00000001
+ETM_Reg_AddressAccessType2=0x00000001
+ETM_Reg_AddressAccessType3=0x00000001
+ETM_Reg_AddressAccessType4=0x00000001
+ETM_Reg_AddressAccessType5=0x00000001
+ETM_Reg_AddressAccessType6=0x00000001
+ETM_Reg_AddressAccessType7=0x00000001
+ETM_Reg_AddressAccessType8=0x00000001
+ETM_Reg_AddressAccessType9=0x00000001
+ETM_Reg_AddressAccessType10=0x00000001
+ETM_Reg_AddressAccessType11=0x00000001
+ETM_Reg_AddressAccessType12=0x00000001
+ETM_Reg_AddressAccessType13=0x00000001
+ETM_Reg_AddressAccessType14=0x00000001
+ETM_Reg_AddressAccessType15=0x00000001
+ETM_Reg_AddressAccessType16=0x00000001
+ETM_Reg_DataComparatorValue1=0x00000000
+ETM_Reg_DataComparatorValue2=0x00000000
+ETM_Reg_DataComparatorValue3=0x00000000
+ETM_Reg_DataComparatorValue4=0x00000000
+ETM_Reg_DataComparatorValue5=0x00000000
+ETM_Reg_DataComparatorValue6=0x00000000
+ETM_Reg_DataComparatorValue7=0x00000000
+ETM_Reg_DataComparatorValue8=0x00000000
+ETM_Reg_DataComparatorValue9=0x00000000
+ETM_Reg_DataComparatorValue10=0x00000000
+ETM_Reg_DataComparatorValue11=0x00000000
+ETM_Reg_DataComparatorValue12=0x00000000
+ETM_Reg_DataComparatorValue13=0x00000000
+ETM_Reg_DataComparatorValue14=0x00000000
+ETM_Reg_DataComparatorValue15=0x00000000
+ETM_Reg_DataComparatorValue16=0x00000000
+ETM_Reg_DataComparatorMask1=0x00000000
+ETM_Reg_DataComparatorMask2=0x00000000
+ETM_Reg_DataComparatorMask3=0x00000000
+ETM_Reg_DataComparatorMask4=0x00000000
+ETM_Reg_DataComparatorMask5=0x00000000
+ETM_Reg_DataComparatorMask6=0x00000000
+ETM_Reg_DataComparatorMask7=0x00000000
+ETM_Reg_DataComparatorMask8=0x00000000
+ETM_Reg_DataComparatorMask9=0x00000000
+ETM_Reg_DataComparatorMask10=0x00000000
+ETM_Reg_DataComparatorMask11=0x00000000
+ETM_Reg_DataComparatorMask12=0x00000000
+ETM_Reg_DataComparatorMask13=0x00000000
+ETM_Reg_DataComparatorMask14=0x00000000
+ETM_Reg_DataComparatorMask15=0x00000000
+ETM_Reg_DataComparatorMask16=0x00000000
+ETM_Reg_InitialCounterValue1=0x00000000
+ETM_Reg_InitialCounterValue2=0x00000000
+ETM_Reg_InitialCounterValue3=0x00000000
+ETM_Reg_InitialCounterValue4=0x00000000
+ETM_Reg_CounterEnable1=0x0002406F
+ETM_Reg_CounterEnable2=0x0002406F
+ETM_Reg_CounterEnable3=0x0002406F
+ETM_Reg_CounterEnable4=0x0002406F
+ETM_Reg_CounterReload1=0x0000406F
+ETM_Reg_CounterReload2=0x0000406F
+ETM_Reg_CounterReload3=0x0000406F
+ETM_Reg_CounterReload4=0x0000406F
+ETM_Reg_SequencerStateTransition1=0x00000000
+ETM_Reg_SequencerStateTransition2=0x00000000
+ETM_Reg_SequencerStateTransition3=0x00000000
+ETM_Reg_SequencerStateTransition4=0x00000000
+ETM_Reg_SequencerStateTransition5=0x00000000
+ETM_Reg_SequencerStateTransition6=0x00000000
+ETM_Reg_ExternalOutputs1=0x00000000
+ETM_Reg_ExternalOutputs2=0x00000000
+ETM_Reg_ExternalOutputs3=0x00000000
+ETM_Reg_ExternalOutputs4=0x00000000
+ETM_Reg_ContextIDValue1=0x00000000
+ETM_Reg_ContextIDValue2=0x00000000
+ETM_Reg_ContextIDValue3=0x00000000
+ETM_Reg_ContextIDMask=0x00000000
+ETM_Reg_SynchronizationFrequency=0x00000400
+TraceBufferSize=0x00000000
+TraceShowTime=0
+TraceShowTimeFreq=1000000
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[Breakpoints]
+Count=0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+Title_0=I0
+Symbol_0=0 4 0
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[EventLog]
+Title_0=Ch3
+Symbol_0=0 4 1
+Title_1=Ch2
+Symbol_1=0 4 1
+Title_2=Ch1
+Symbol_2=0 4 1
+Title_3=Ch0
+Symbol_3=0 4 1
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_DATA" "UART_Put_Buff" 0 0 0 0 4294967295
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\LQuser\user\Future_inv_mpu.c}.860.5" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\LQuser\user\Future_inv_mpu.c}.2919.13" 0 0 1 "" 0 "" 0
+Count=3
+[Aliases]
+A0=_ "C:\Users\Administrator\Desktop\7.4\7.3傍晚\电磁，环岛，断路，路障\LQuser\user\APPmain.c" ""
+A1=_ "D:\桌面文件\测试专用库\LQ_KV58F24第3版20180424\LQ_KV58F24第3版\LQ_KV58F24第3版20181120\LQuser\devices\startup\startup.c" ""
+Count=2
+SuppressDialog=1

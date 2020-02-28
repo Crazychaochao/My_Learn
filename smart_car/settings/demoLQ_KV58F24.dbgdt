@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>944</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>708</ColumnWidth1>
+        <ColumnWidth2>188</ColumnWidth2>
+        <ColumnWidth3>47</ColumnWidth3>
+      </Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>207</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        <col-names>
+          
+          
+        <item>Disassembly</item><item>_I0</item></col-names>
+        <col-widths>
+          
+          
+        <item>500</item><item>20</item></col-widths>
+        <DisasmHistory/>
+        
+        
+      <PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
+    <WATCH_1><expressions><item>Tar_Ang_Vel.Y</item><item>Theory_Duty</item><item>MOTOR_Duty_Right</item><item>MOTOR_Duty_Left</item><item>Direct_Parameter</item><item>Ang_Vel_PID</item><item>Ang_Vel</item><item>GYRO_Real.Y</item><item>Tar_Ang_Vel.Y</item><item>Radius</item><item>Speed_Min</item><item>System_OK</item><item>GYRO_Real.Y</item><item>duty_a</item><item/></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>142</item><item>150</item><item>100</item><item>249</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></WATCH_1><Select-Ambiguous-Definitions><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Select-Ambiguous-Definitions><Find-All-Declarations><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-All-Declarations><PROJECT_GUI_CALL_GRAPH><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><col-names><item>File</item><item>Function</item><item>Line</item></col-names><col-widths><item>200</item><item>700</item><item>100</item></col-widths></PROJECT_GUI_CALL_GRAPH><Find-All-References><ColumnWidth0>470</ColumnWidth0><ColumnWidth1>67</ColumnWidth1><ColumnWidth2>806</ColumnWidth2></Find-All-References><StaticWatch><expressions><item>Attitude_Angle.Y</item><item>MOTOR_Duty_Left</item><item>MOTOR_Duty_Right</item><item>ad5</item><item>Mode_Set</item><item>ADresult</item><item>chabihe</item><item>ADresult</item><item>Sum_Error</item><item>diszhidao_flag</item><item>lose_left_flag</item><item>lose_right_flag</item><item>right_huandao_flag</item><item>sanlun_right_huandao_flag</item><item>qqqqq</item><item>black_left</item><item>Middle_Line</item><item>buxianwan</item><item>get</item><item>left_huandao_flag</item><item>sanlun_left_huandao_flag</item><item>zhilidistance</item><item></item></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>200</item><item>94</item><item>77</item><item>122</item></col-widths></StaticWatch></Static>
+    <Windows>
+      
+      
+      
+    <Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-12510-15564</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-11987-15574</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-6042-8728</Identity><TabName>Ambiguous Definitions</TabName><Factory>Select-Ambiguous-Definitions</Factory><Session/></Tab><Tab><Identity>TabID-22223-24926</Identity><TabName>Declarations</TabName><Factory>Find-All-Declarations</Factory><Session/></Tab><Tab><Identity>TabID-20289-5041</Identity><TabName>References</TabName><Factory>Find-All-References</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3><Wnd4>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-23258-15568</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>demoLQ_KV58F24</ExpandedNode><ExpandedNode>demoLQ_KV58F24/user</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd4><Wnd5><Tabs><Tab><Identity>TabID-22993-776</Identity><TabName>Live Watch</TabName><Factory>StaticWatch</Factory></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd5></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\EandV.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>475</XPos2><YPos2>130</YPos2><SelStart2>5659</SelStart2><SelEnd2>5659</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\LQMT9V034.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>85</YPos2><SelStart2>2858</SelStart2><SelEnd2>2864</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\avoid.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>293</SelStart2><SelEnd2>293</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\avoid.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>290</SelStart2><SelEnd2>305</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\tuxiang.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>727</YPos2><SelStart2>17228</SelStart2><SelEnd2>17228</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\APPmain.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>244</SelStart2><SelEnd2>244</SelEnd2></Tab><ActiveTab>5</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\System.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>12</YPos2><SelStart2>3036</SelStart2><SelEnd2>3036</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\DianCi_BianCha.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>318</YPos2><SelStart2>7701</SelStart2><SelEnd2>7701</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\LQUART.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>635</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\LQuser\user\LQPIT.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>90</YPos2><SelStart2>3495</SelStart2><SelEnd2>3495</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00C98C58><key>iaridepm.enu1</key></Toolbar-00C98C58></Sizes></Row0><Row1><Sizes><Toolbar-23A90750><key>debuggergui.enu1</key></Toolbar-23A90750><Toolbar-042C8968><key>armjlink2.enu1</key></Toolbar-042C8968></Sizes></Row1></Top><Left><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>492</Bottom><Right>298</Right><x>-2</x><y>-2</y><xscreen>198</xscreen><yscreen>153</yscreen><sizeHorzCX>144949</sizeHorzCX><sizeHorzCY>223032</sizeHorzCY><sizeVertCX>219619</sizeVertCX><sizeVertCY>720117</sizeVertCY></Rect></Wnd4></Sizes></Row0></Left><Right><Row0><Sizes><Wnd5><Rect><Top>-2</Top><Left>-2</Left><Bottom>492</Bottom><Right>417</Right><x>-2</x><y>-2</y><xscreen>267</xscreen><yscreen>200</yscreen><sizeHorzCX>195461</sizeHorzCX><sizeHorzCY>291545</sizeHorzCY><sizeVertCX>306735</sizeVertCX><sizeVertCY>720117</sizeVertCY></Rect></Wnd5></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>125</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>127</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>185131</sizeHorzCY><sizeVertCX>144949</sizeVertCX><sizeVertCY>223032</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

@@ -1,0 +1,130 @@
+/*LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+【平    台】龙邱KV58F24智能车VD母板
+【编    写】CHIUSIR
+【E-mail  】chiusir@163.com
+【软件版本】V1.0
+【最后更新】2017年12月15日
+【相关信息参考下列地址】
+【网    站】http://www.lqist.cn
+【淘宝店铺】http://shop36265907.taobao.com
+------------------------------------------------
+【dev.env.】IAR7.80.4
+【Target  】MKV58F1M0VLQ24
+【Crystal 】 50.000Mhz
+【busclock】137.500MHz
+【pllclock】275.000MHz
+QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ*/
+
+#include "include.h"
+
+void KEY_Init(void)
+{
+  GPIO_Init(GPIOB,20,GPI,1);
+  GPIO_Init(GPIOB,21,GPI,1);
+  GPIO_Init(GPIOB,22,GPI,1);   
+}
+/**************************************************************
+【功能说明】拨码开关初始化
+【软件版本】
+【最后更新】
+【函数名】
+【返回值】无
+【参数值】无
+【 功能 】用于调试
+***************************************************************/
+void SW_Key_Init(void)
+{
+    GPIO_Init(GPIOA,5,GPI,0);                   //2
+    GPIO_Init(GPIOA,7,GPI,0);                   //3
+    GPIO_Init(GPIOA,9,GPI,0);                   //4
+}
+
+u8 KEY_Read(KEYn_e keyno)
+{
+  switch(keyno) 
+  {
+  case KEY0:
+    return GPIO_Get(PTB20);
+    break;
+    
+  case KEY1:
+    return GPIO_Get(PTB21);
+    break;
+    
+  case KEY2:
+    return GPIO_Get(PTB22);
+    break;
+  default:
+    return 0XFF;    
+  }
+}
+
+/*LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+【作  者】CHIUSIR
+【功能说明】测试按键及OLED显示
+【软件版本】V1.0
+【最后更新】2017年11月24日 
+【函数名】
+【返回值】无
+【参数值】无
+QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ*/
+void Test_GPIO_KEY(void)
+{ 
+  while (1)
+  {  
+    //测试按键      
+    if(KEY_Read(KEY0)==0)
+      LCD_P6x8Str(13,3,(uint8_t*)"KEY0 Pressed!   ");
+    else LCD_P6x8Str(13,3,(uint8_t*)"KEY0 NO Pressed!");
+    if(KEY_Read(KEY1)==0)
+      LCD_P6x8Str(13,5,(uint8_t*)"KEY1 Pressed!   ");
+    else LCD_P6x8Str(13,5,(uint8_t*)"KEY1 NO Pressed!");
+    if(KEY_Read(KEY2)==0)
+      LCD_P6x8Str(13,7,(uint8_t*)"KEY2 Pressed!   ");
+    else LCD_P6x8Str(13,7,(uint8_t*)"KEY2 NO Pressed!");
+    
+    //LED闪烁
+    LED_Ctrl(LED1, RVS);     
+    
+    //延时
+    time_delay_ms(50);
+  }
+}
+
+void PORTB_IRQHandler(void)
+{
+  int n;
+  n=20;
+  if((PORTB_ISFR & (1<<n)))
+  {
+      PORTB_ISFR |= (1<<n);
+      /* 用户自行添加中断内程序 */
+      LED_Ctrl(LED0, RVS); 
+  }
+  n=21;
+  if((PORTB_ISFR & (1<<n)))
+  {
+      PORTB_ISFR |= (1<<n);
+      /* 用户自行添加中断内程序 */
+      LED_Ctrl(LED1, RVS); 
+  }
+  n=22;
+  if((PORTB_ISFR & (1<<n)))
+  {
+      PORTB_ISFR |= (1<<n);
+      /* 用户自行添加中断内程序 */
+      LED_Ctrl(LED2, RVS); 
+  }
+}
+
+void Test_GPIO_EXINT(void)
+{  
+  EXTI_Init(GPIOB,22,rising_down);   //K2
+  EXTI_Init(GPIOB,21,falling_up);    //K1中断  
+  EXTI_Init(GPIOB,20,falling_up);    //K0中断 
+  for(;;)
+  {  
+    //systick中断延时
+    time_delay_ms(5);
+  }
+}
