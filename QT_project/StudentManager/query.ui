@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>query</class>
+ <widget class="QDialog" name="query">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,6,2">
+     <item>
+      <widget class="QComboBox" name="cbb_method">
+       <item>
+        <property name="text">
+         <string>请选择查询方式</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按姓名查询</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按学号查询</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>按院系查询</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_cnt"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_serch">
+       <property name="text">
+        <string>搜索</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableView" name="tableView"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
