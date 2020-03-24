@@ -2383,21 +2383,972 @@ int main()
 
 ![1584882063109](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584882063109.png)
 
+string字符串比较
+
+![1584949844530](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584949844530.png)
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
 
 
+void example()
+{
+   string str1 = "xello";
+   string str2 = "hello";
+
+   if(str1.compare(str2) == 0)
+   {
+      cout << "str1 = str2 " << endl;//这个比较有意义
+   }
+   else if(str1.compare(str2) > 0)
+   {
+      cout << "str1 > str2 " << endl;
+   }
+   else
+{
+      cout << "str1 < str2 " << endl;
+   }
+
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+string字符存取
+
+![1584950199554](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584950199554.png)
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+void example()
+{
+   string str1 = "hello";
+   //通过[]访问单个字符
+   for(int i=0; i<str1.size();i++)
+   {
+       cout << str1[i];
+   }
+   cout << endl;
+
+   //通过at方式访问单个字符
+   for(int i=0;i<str1.size();i++)
+   {
+       cout << str1.at(i) << " ";
+   }
+   cout << endl;
+
+   //修改单个字符
+   str1[0] = 's';
+   cout << str1 << endl;
+
+   str1.at(1) = 's';
+   cout << str1 << endl;
+
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+string插入和删除
+
+![1584950603004](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584950603004.png)
+
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+void example()
+{
+   string str = "hello";
+   //插入
+   str.insert(1,"111");
+
+   cout << str << endl;
+
+   //删除
+   str.erase(1,3);
+   cout << str << endl;
+
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+string子串
+
+![1584950823772](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584950823772.png)
+
+## vector容器
+
+![1584960135151](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584960135151.png)
+
+![1584960314011](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584960314011.png)
+
+![1584960619932](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584960619932.png)
+
+```C++
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+//vector容器构造
+
+void printVector(vector<int> &a)
+{
+    for(vector<int>::iterator it = a.begin();it < a.end();it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void example()
+{
+   vector<int>v1;//默认构造
+   for(int i=0;i<10;i++)
+   {
+       v1.push_back(i);
+   }
+   printVector(v1);
+
+   //通过区间方式进行构造
+   vector<int>v2(v1.begin(),v1.end());
+   printVector(v2);
+
+   //n个element方式构造
+   vector<int>v3(10,100);
+   printVector(v3);
+
+   //拷贝构造
+   vector<int>v4(v3);
+   printVector(v4);
+}
 
 
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+vector赋值操作
+
+![1584963806756](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584963806756.png)
+
+```C++
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+//vector容器构造
+
+void printVector(vector<int> &a)
+{
+    for(vector<int>::iterator it = a.begin();it < a.end();it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void example()
+{
+   vector<int>v1;//默认构造
+   for(int i=0;i<10;i++)
+   {
+       v1.push_back(i);
+   }
+   printVector(v1);
+
+  //赋值
+  vector<int>v2;
+  v2 = v1;
+  printVector(v2);
+
+  //assign
+  vector<int>v3;
+  v3.assign(v1.begin(),v1.end());
+  printVector(v3);
+
+  //n个elem方式赋值
+  vector<int>v4;
+  v4.assign(10,100);
+  printVector(v4);
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+**vector容量和大小**
+
+![1584964145079](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584964145079.png)
+
+![1584964967477](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584964967477.png)
+
+```C++
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+//vector容器构造
+
+void printVector(vector<int> &a)
+{
+    for(vector<int>::iterator it = a.begin();it < a.end();it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void example()
+{
+   vector<int>v1;//默认构造
+   for(int i=0;i<10;i++)
+   {
+       v1.push_back(i);
+   }
+   printVector(v1);
+
+   if(v1.empty())//为真，代表容器为空
+   {
+      cout << "v1为空：" << endl;
+   }
+   else
+   {
+      cout << "v1不为空" << endl;
+      cout << "v1的容量为：" << v1.capacity() << endl;
+      cout << "v1的大小为：" << v1.size() << endl;
+   }
+
+   //重新指定大小
+   v1.resize(15);
+   printVector(v1);//如果重新指定的比原来长了，默认用0填充新的位置
+
+   v1.resize(5);
+   printVector(v1);//如果重新指定的比原来短了，则删掉后面的
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+
+```
+
+**vector插入和删除**
+
+![1584965031088](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584965031088.png)
+
+```C++
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+//vector插入和删除
+
+void printVector(vector<int> &a)
+{
+    for(vector<int>::iterator it = a.begin();it < a.end();it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void example()
+{
+   vector<int>v1;//默认构造
+   //尾插
+   v1.push_back(10);
+   v1.push_back(20);
+   v1.push_back(30);
+   v1.push_back(40);
+   v1.push_back(50);
+
+   //遍历
+   printVector(v1);
+   //尾删
+   v1.pop_back();
+   printVector(v1);
+
+   //插入
+   v1.insert(v1.begin(),100);
+   printVector(v1);
+
+   v1.insert(v1.begin(),2,1000);
+   printVector(v1);
+
+   //删除
+   v1.erase(v1.begin());
+   printVector(v1);
+
+   //v1.erase(v1.begin(),v1.end());
+   v1.clear();
+   cout << "删除后：" << endl;
+   printVector(v1);
+}
 
 
+int main()
+{
+    example();
+    return 0;
+}
+
+```
+
+**vector数据存取**
+
+![1584967859946](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584967859946.png)
+
+```C++
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+//vector插入和删除
+
+void printVector(vector<int> &a)
+{
+    for(vector<int>::iterator it = a.begin();it < a.end();it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void example()
+{
+   vector<int>v1;//默认构造
+   //尾插
+   for(int i=0;i<10;i++)
+   {
+      v1.push_back(i);
+   }
+
+   for(int i=0;i<v1.size();i++)
+   {
+       cout << v1[i] << " ";
+   }
+   cout << endl;
+   //利用at方式访问元素
+   for(int i=0;i<v1.size();i++)
+   {
+       cout << v1.at(i) << " ";
+   }
+   cout << endl;
+
+   //获取第一个元素
+   cout << "第一个元素为：" << v1.front() << endl;
+   //获取最后一个元素
+   cout << "最后一个元素为：" << v1.back() << endl;
+}
 
 
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+**vector互换容器**
+
+![1584968504636](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584968504636.png)
+
+```C++
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+//vector容器互换
+
+void printVector(vector<int> &a)
+{
+    for(vector<int>::iterator it = a.begin();it < a.end();it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void example()
+{
+   vector<int>v1;//默认构造
+   for(int i=0;i<10;i++)
+   {
+       v1.push_back(i);
+   }
+   cout << "交换前：" << endl;
+   printVector(v1);
+
+   vector<int>v2;
+   for(int i=10;i>0;i--)
+   {
+       v2.push_back(i);
+   }
+   printVector(v2);
+
+   cout << "交换后：" << endl;
+   v1.swap(v2);
+   printVector(v1);
+   printVector(v2);
+}
+
+//实际用途
+//巧用swap可以收缩内存空间
+void example1()
+{
+    vector<int>v;
+    for(int i=0;i<10000;i++)
+    {
+        v.push_back(i);
+    }
+
+    cout << "v的容量为：" << v.capacity() << endl;
+    cout << "v的大小为：" << v.size() << endl;
+
+    v.resize(3);
+    cout << "v的容量为：" << v.capacity() << endl;
+    cout << "v的大小为：" << v.size() << endl;
+
+    //巧用swap收缩内存
+    //vector<int>(v)  匿名对象
+    //.swap(v) 容器交换
+    vector<int>(v).swap(v);
+    cout << "v的容量为：" << v.capacity() << endl;
+    cout << "v的大小为：" << v.size() << endl;
+}
+
+int main()
+{
+    example1();
+    return 0;
+}
+```
+
+vector预留空间
+
+![1584969697198](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584969697198.png)
+
+```C++
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+//vector容器互换
+
+void printVector(vector<int> &a)
+{
+    for(vector<int>::iterator it = a.begin();it < a.end();it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void example()
+{
+   vector<int>v;//默认构造
+
+   //利用reserve预留空间
+   v.reserve(10000);
+
+   int num = 0;
+   int * p = NULL;
+   for(int i=0;i<10000;i++)
+   {
+       v.push_back(i);
+       if(p != &v[0])
+       {
+           p = &v[0];
+           num++;
+       }
+   }
+
+   cout << "num = " << num << endl;
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+## deque容器
+
+![1584970866427](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584970866427.png)
+
+![1585007568264](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585007568264.png)
+
+![1585007644631](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585007644631.png)
+
+deque容器的迭代器也是支持随机访问的
+
+**deque构造函数**
+
+![1585007753912](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585007753912.png)
+
+```C++
+#include <iostream>
+#include <string>
+#include <deque>
+using namespace std;
+
+//vector容器互换
+
+void printDeque(const deque<int> &a)
+{
+    for(deque<int>::const_iterator it = a.begin();it < a.end();it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+void example()
+{
+   deque<int> d1;
+   for(int i=0;i<10;i++)
+   {
+       d1.push_back(i);
+   }
+   printDeque(d1);
+
+   deque<int>d2(d1.begin(),d1.end());
+   printDeque(d2);
+
+   deque<int>d3(10,100);
+   printDeque(d3);
+
+   deque<int>d4(d3);
+   printDeque(d4);
+}
 
 
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+deque赋值操作
+
+![1585010036771](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585010036771.png)
+
+![1585010411027](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585010411027.png)
+
+![1585010524515](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585010524515.png)
+
+![1585010557789](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585010557789.png)
+
+![1585010579278](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585010579278.png)
+
+## 案例
+
+```C++
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <ctime>
+#include <algorithm>
+using namespace std;
 
 
+class Person
+{
+public:
+    Person(string name,int score)
+    {
+        this->m_name = name;
+        this->m_score = score;
+    }
+
+    string m_name;
+    int m_score;
+};
 
 
+void createPerson(vector<Person>&v)
+{
+    string nameSeed = "ABCDE";
+    for(int i=0;i<5;i++)
+    {
+        string name = "选手";
+        name += nameSeed[i];
+
+        int score = 0;
+        Person p(name,score);
+
+        v.push_back(p);
+    }
+}
+
+void setScore(vector<Person>&v)
+{
+    for(vector<Person>::iterator it = v.begin(); it != v.end();it++)
+    {
+        //将评委的分数，放入deque容器中
+        deque<int>d;
+        for(int i=0;i<10;i++)
+        {
+            int score = rand()%41+60;
+            d.push_back(score);
+        }
+
+        cout << "选手： " << it->m_name << "打分： " << endl;
+        for(deque<int>::iterator dit = d.begin();dit != d.end();dit++)
+        {
+             cout << *dit << " ";
+        }
+        cout << endl;
+
+        //排序
+        sort(d.begin(),d.end());
+
+        //去除最高分最低分
+        d.pop_back();
+        d.pop_front();
+
+        //取平均分
+        int sum = 0;
+        for(deque<int>::iterator dit = d.begin();dit != d.end();dit++)
+        {
+             sum += *dit;
+        }
+
+        int avg = sum / d.size();
+
+        //将平均分 赋值给选手身上
+        it->m_score = avg;
+    }
+}
+
+void showScore(vector<Person>&v)
+{
+    for(vector<Person>::iterator it = v.begin(); it != v.end();it++)
+    {
+        cout << "选手： " << it->m_name << "平均分： " << it->m_score << endl;
+    }
+}
+
+int main()
+{
+    srand((unsigned int)time(NULL));
+    vector<Person>v;
+    createPerson(v);
+
+//    for(vector<Person>::iterator it = v.begin();it != v.end();i++)
+//    {
+//        cout << "姓名： " << (*it).m_name << "分数： " << (*it).m_score << endl;
+//    }
+    setScore(v);
+
+    showScore(v);
+
+    return 0;
+}
+
+```
+
+## stack容器
+
+![1585013307148](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585013307148.png)
+
+![1585013938462](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585013938462.png)
+
+![1585014424338](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585014424338.png)
+
+```C++
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <ctime>
+#include <stack>
+#include <algorithm>
+using namespace std;
 
 
+//栈stack容器
+void example()
+{
+   stack<int>s;
 
+   //入栈
+   s.push(10);
+   s.push(20);
+   s.push(30);
+   s.push(40);
+
+   cout << "栈的大小：" << s.size() << endl;
+   //只要栈不会控，查看栈顶，并且执行出栈操作
+   while(!s.empty())
+   {
+       //查看栈顶元素
+       cout << "栈顶元素为：" << s.top() << endl;
+
+       //出栈
+       s.pop();
+   }
+
+   cout << "栈的大小：" << s.size() << endl;
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+## queue容器
+
+![1585014505561](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585014505561.png)
+
+![1585014579747](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585014579747.png)
+
+![1585014691687](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585014691687.png)
+
+![1585014838604](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585014838604.png)
+
+## list容器
+
+![1585014896586](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585014896586.png)
+
+![1585016536974](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585016536974.png)
+
+![1585016633524](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585016633524.png)
+
+![1585016763540](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585016763540.png)
+
+![1585016832554](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585016832554.png)
+
+```C++
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <ctime>
+#include <stack>
+#include <list>
+#include <algorithm>
+using namespace std;
+
+
+void printList(const list<int> &l)
+{
+    for(list<int>::const_iterator it = l.begin();it != l.end();it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
+}
+
+
+//list容器构造函数
+void example()
+{
+   list<int>L1;
+   L1.push_back(10);
+   L1.push_back(20);
+   L1.push_back(30);
+   L1.push_back(40);
+   L1.push_back(50);
+
+   printList(L1);
+
+   //区间方式构造
+   list<int>L2(L1.begin(),L1.end());
+   printList(L2);
+
+   list<int>L3(L2);
+   printList(L3);
+
+   list<int>L4(10,1000);
+   printList(L4);
+}
+
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+![1585017310910](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585017310910.png)
+
+![1585017352240](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585017352240.png)
+
+![1585017369405](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585017369405.png)
+
+![1585017398303](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585017398303.png)
+
+![1585017469653](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585017469653.png)
+
+## 排序案例
+
+```C++
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <ctime>
+#include <stack>
+#include <list>
+#include <algorithm>
+using namespace std;
+
+class Person
+{
+public:
+    Person(string name,int age,int height)
+    {
+        this->m_name = name;
+        this->m_age = age;
+        this->m_height = height;
+    }
+    string m_name;
+    int m_age;
+    int m_height;
+};
+
+//list容器 排序案例 对于自定义数据类型 做排序、
+
+
+void printList(const list<Person> &l)
+{
+    for(list<Person>::const_iterator it = l.begin();it != l.end();it++)
+    {
+        cout << "name: " << it->m_name << "     age: " << it->m_age << "     height: " << it->m_height << endl;
+    }
+    cout << endl;
+}
+
+//指定排序规则
+bool comparePerson(Person &p1,Person &p2)
+{
+    //按照年龄 升序
+    if(p1.m_age == p2.m_age)
+    {
+        return p1.m_height > p2.m_height;
+    }
+    else
+    {
+        return p1.m_age > p2.m_age;
+    }
+}
+
+void example()
+{
+    list<Person>L;
+    Person p1("A",35,175);
+    Person p2("B",45,185);
+    Person p3("C",40,195);
+    Person p4("D",25,165);
+    Person p5("E",35,205);
+
+    //插入数据
+    L.push_back(p1);
+    L.push_back(p2);
+    L.push_back(p3);
+    L.push_back(p4);
+    L.push_back(p5);
+    printList(L);
+
+    //排序
+    cout << "排序后：" << endl;
+    L.sort(comparePerson);
+    printList(L);
+}
+
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+![1585018658819](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585018658819.png)
+
+## set/multiset容器
+
+![1585018701211](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585018701211.png)![1585019445474](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585019445474.png)
+
+![1585019464066](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585019464066.png)
+
+![1585019541505](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585019541505.png)
+
+![1585019566859](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585019566859.png)
+
+![1585019587914](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585019587914.png)
+
+![1585019603176](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585019603176.png)
+
+![1585019623978](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585019623978.png)
+
+**pair对组创建**
+
+![1585019686253](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585019686253.png)
+
+```C++
+#include <stack>
+#include <list>
+#include <algorithm>
+using namespace std;
+
+//pair对组的创建
+void example()
+{
+   // 第一种方式
+   pair<string,int>p("Tom",20);
+   cout << "姓名：" <<p.first << "  年龄：" << p.second << endl;
+
+   //第二种方式
+   pair<string,int>p2 = make_pair("Amy",20);
+   cout << "姓名：" <<p2.first << "  年龄：" << p2.second << endl;
+}
+
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+![1585020014961](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585020014961.png)
 
