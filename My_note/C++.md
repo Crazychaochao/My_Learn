@@ -2,6 +2,20 @@
 
 ![1584748395438](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584748395438.png)
 
+## C++怎样实现清屏
+
+ 操作方法: #include<stdlib.h> 调用system("cls");清屏 
+
+## fstream文件读写问题
+
+用c_str解决
+
+## CodeBlocks报错“undefined reference to ...”
+
+![1585316594745](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585316594745.png)
+
+project->properties
+
 # C++   继承
 
 ```C++
@@ -3351,4 +3365,480 @@ int main()
 ```
 
 ![1585020014961](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585020014961.png)
+
+```C++
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <ctime>
+#include <stack>
+#include <list>
+#include <set>
+#include <algorithm>
+using namespace std;
+
+class MyCompare
+{
+public:
+    bool operator()(int v1,int v2)
+    {
+        return v1 > v2;
+    }
+};
+
+//set容器排序
+void example()
+{
+   set<int>s1;
+   s1.insert(10);
+   s1.insert(30);
+   s1.insert(20);
+   s1.insert(50);
+   s1.insert(50);
+
+   for(set<int>::iterator it = s1.begin(); it != s1.end();it++)
+   {
+       cout << *it << " ";
+   }
+   cout << endl;
+
+   //指定排序规则为从大到小
+   set<int,MyCompare>s2;
+   s2.insert(10);
+   s2.insert(30);
+   s2.insert(20);
+   s2.insert(50);
+   s2.insert(50);
+
+   for(set<int,MyCompare>::iterator it = s2.begin(); it != s2.end();it++)
+   {
+       cout << *it << " ";
+   }
+   cout << endl;
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+**set自定义数据类型指定排序规则**
+
+```C++
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <ctime>
+#include <stack>
+#include <list>
+#include <set>
+#include <algorithm>
+using namespace std;
+
+class Person
+{
+public:
+    Person(string name,int age)
+    {
+        this->m_name = name;
+        this->m_age = age;
+    }
+    string m_name;
+    int m_age;
+};
+
+class comparePerson
+{
+public:
+    bool operator()(const Person &p1,const Person &p2)
+    {
+        return p1.m_age > p2.m_age;
+    }
+};
+
+void example()
+{
+   //自定义数据类型 都会制定排序规则
+   set<Person,comparePerson>s1;
+
+   Person p1("A",23);
+   Person p2("B",29);
+   Person p3("C",21);
+   Person p4("D",26);
+
+   s1.insert(p1);
+   s1.insert(p2);
+   s1.insert(p3);
+   s1.insert(p4);
+
+   for(set<Person,comparePerson>::iterator it = s1.begin();it != s1.end();it++)
+   {
+       cout << "姓名：" << it->m_name << "   年龄： " << it->m_age << endl;
+   }
+}
+
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+## map/multimap容器
+
+![1585035979476](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585035979476.png)
+
+![1585036402894](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585036402894.png)
+
+示例：
+
+![1585036450564](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585036450564.png)
+
+![1585036492477](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585036492477.png)
+
+按照key来排序
+
+![1585036545696](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585036545696.png)
+
+![1585036582579](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585036582579.png)
+
+![1585036637293](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585036637293.png)
+
+**map大小和交换**
+
+![1585036679959](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585036679959.png)
+
+![1585036848086](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585036848086.png)
+
+互换
+
+![1585036921535](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585036921535.png)
+
+![1585037107296](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037107296.png)
+
+![1585037205969](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037205969.png)
+
+![1585037229598](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037229598.png)
+
+![1585037389801](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037389801.png)
+
+![1585037459820](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037459820.png)
+
+![1585037514042](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037514042.png)
+
+**统计**
+
+![1585037570035](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037570035.png)
+
+![1585037660066](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037660066.png)
+
+![1585037699444](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037699444.png)
+
+![1585037794319](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585037794319.png)
+
+## 案例
+
+![1585038026736](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585038026736.png)
+
+```C++
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <ctime>
+#include <stack>
+#include <list>
+#include <set>
+#include <map>
+#include <algorithm>
+using namespace std;
+
+
+#define CEHUA 0
+#define MEISHU 1
+#define YANFA 2
+
+class Worker
+{
+public:
+   string m_name;
+   int m_salary;
+};
+
+void creatworker(vector<Worker>&v)
+{
+    string nameSeed = "ABCDEFGHIJ";
+    for(int i=0;i<10;i++)
+    {
+       Worker worker;
+       worker.m_name = "员工";
+       worker.m_name += nameSeed[i];
+
+       worker.m_salary = rand()%10000 + 10000;//10000 ~ 19999
+       //将员工放入容器中
+       v.push_back(worker);
+    }
+}
+
+void setGroup(vector<Worker> &v,multimap<int,Worker> &m)
+{
+    for(vector<Worker>::iterator it = v.begin();it != v.end();it++)
+    {
+        int deptID = rand() %3;//0 1 2
+        //key部门编号，value具体员工
+        m.insert(make_pair(deptID,*it));
+    }
+}
+
+void showWorkerByGroup(multimap<int,Worker>&m)
+{
+    cout << "策划部门：" << endl;
+    multimap<int,Worker>::iterator pos = m.find(CEHUA);
+    int count = m.count(CEHUA);
+    int index = 0;
+    for(;pos != m.end()&&index<count;pos++,index++)
+    {
+        cout << "姓名：" << pos->second.m_name << "  工资：" << pos->second.m_salary << endl;
+    }
+
+    cout << "美术部门：" << endl;
+    pos = m.find(MEISHU);
+    count = m.count(MEISHU);
+    index = 0;
+    for(;pos != m.end()&&index<count;pos++,index++)
+    {
+        cout << "姓名：" << pos->second.m_name << "  工资：" << pos->second.m_salary << endl;
+    }
+
+    cout << "研发部门：" << endl;
+    pos = m.find(YANFA);
+    count = m.count(YANFA);
+    index = 0;
+    for(;pos != m.end()&&index<count;pos++,index++)
+    {
+        cout << "姓名：" << pos->second.m_name << "  工资：" << pos->second.m_salary << endl;
+    }
+}
+
+int main()
+{
+    srand((unsigned int)time(NULL));
+    //创建员工
+    vector<Worker>vWorker;
+    creatworker(vWorker);
+
+    //员工分组
+    multimap<int,Worker>mWorker;
+    setGroup(vWorker,mWorker);
+//    for(vector<Worker>::iterator it = vWorker.begin();it != vWorker.end(); it++)
+//    {
+//        cout << "姓名：" << it->m_name << "   工资：" << it->m_salary << endl;
+//    }
+    //分组显示员工
+    showWorkerByGroup(mWorker);
+    return 0;
+}
+
+```
+
+## 函数对象
+
+![1585048221904](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585048221904.png)
+
+```C++
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <ctime>
+#include <stack>
+#include <list>
+#include <set>
+#include <map>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+//函数对象（仿函数）
+class MyAdd
+{
+public:
+    int operator()(int v1,int v2)
+    {
+        return v1+v2;
+    }
+};
+
+class MyPrint
+{
+public:
+    MyPrint()
+    {
+        this->count=0;
+    }
+    void operator()(string test)
+    {
+        cout << test << endl;
+        this->count++;
+    }
+    int count;//自己内部状态
+};
+
+void doprint(MyPrint & mp, string test)
+{
+    mp(test);
+}
+
+void example2()
+{
+    MyPrint myprint;
+    doprint(myprint,"Hello C++");
+}
+
+void example1()
+{
+    MyPrint myprint;
+    myprint("hello world");
+    myprint("hello world");
+    myprint("hello world");
+    myprint("hello world");
+
+    cout << "myprint调用次数为：" << myprint.count << endl;
+}
+
+//函数对象在使用时，可以像普通函数那样调用，可以由参数，可以有返回值
+void example()
+{
+    MyAdd myAdd;
+    cout << myAdd(10,10) << endl;
+}
+
+int main()
+{
+    example2();
+    return 0;
+}
+
+```
+
+## STL常用算法
+
+![1585055470377](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585055470377.png)
+
+```C++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+//普通函数
+void print(int val)
+{
+    cout << val << " ";
+}
+
+//仿函数
+class print1
+{
+public:
+    void operator()(int val)
+    {
+        cout << val << " ";
+    }
+};
+
+//常用遍历算法
+void example()
+{
+    vector<int>v;
+    for(int i = 0; i < 10; i++)
+    {
+        v.push_back(i);
+    }
+    for_each(v.begin(),v.end(),print);
+    cout << endl;
+
+    for_each(v.begin(),v.end(),print1());
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+
+```
+
+**tramsform**
+
+![1585056150561](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585056150561.png)
+
+```C++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+//仿函数
+class print
+{
+public:
+    void operator()(int v)
+    {
+        cout << v << " ";
+    }
+};
+
+//仿函数
+class Transform
+{
+public:
+    int operator()(int val)
+    {
+        return val;
+    }
+};
+
+//常用遍历算法 tramsform
+void example()
+{
+    vector<int>v;
+    for(int i = 0; i < 10; i++)
+    {
+        v.push_back(i);
+    }
+    vector<int>vTarget;//目标容器
+    vTarget.resize(v.size());//目标容器，需要提前开辟空间
+
+    transform(v.begin(),v.end(),vTarget.begin(),Transform());
+    for_each(vTarget.begin(),vTarget.end(),print());
+}
+
+int main()
+{
+    example();
+    return 0;
+}
+```
+
+# 案例-机房预约系统
+
+![1585198975527](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585198975527.png)
+
+![1585199131009](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585199131009.png)
+
+![1585199167929](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585199167929.png)
+
+![1585201129350](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585201129350.png)
+
+![1585203465108](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585203465108.png)
+
+![1585204179886](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585204179886.png)
+
+![1585210246183](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585210246183.png)
+
+![1585210947402](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585210947402.png)
 

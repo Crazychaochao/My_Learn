@@ -68,3 +68,29 @@ rm -r 目录名称    表示删除目录
 
 ![1584977740640](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1584977740640.png)
 
+
+
+**管道**
+
+![1585219931009](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585219931009.png)
+
+## 远程管理
+
+![1585220181337](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585220181337.png)
+
+![1585220249249](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585220249249.png)
+
+![1585220364770](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585220364770.png)
+
+
+
+![1585220481184](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585220481184.png)
+
+![1585221773646](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1585221773646.png)
+
+
+
+
+
+
+
